@@ -56,6 +56,11 @@ export default defineConfig({
     },
     colors: {
       primary: '#E4FF00',
+      'neutral-01': '#FFFFFF',
+      'neutral-03': '#F0F0F0',
+      'neutral-04': '#DDDDDD',
+      'neutral-05': '#A0A0A0',
+      'neutral-06': '#6B6B6B',
       'neutral-07': '#141414',
     },
   },

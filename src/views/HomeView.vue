@@ -32,10 +32,6 @@ const mainNav = [
     <HomeSection1 />
     <!-- Section 2 -->
     <div class="bg-neutral-07 relative mt-87px py-150px">
-      <!-- <div
-        class="absolute bottom-0 left-0"
-        :style="{ backgroundImage: `url(${imgUrl('home/2-bg-1.png')})` }"
-      ></div> -->
       <img class="absolute bottom-0 left-0" :src="imgUrl('home/2-bg-1.png')" />
       <img class="absolute right-0 top-0" :src="imgUrl('home/2-bg-2.png')" />
       <div class="relative z-1 text-center text-40px text-white font-700">
@@ -57,7 +53,51 @@ const mainNav = [
       </div>
     </div>
   </main>
-  <footer></footer>
+
+  <footer class="border-t-2px border-white border-solid container">
+    <div class="flex justify-between py-128px">
+      <div class="flex gap-80px">
+        <img :src="logoWhite" class="h-64px w-64px" />
+        <div class="text-neutral-07 flex flex-col gap-18px">
+          <div class="text-16px font-700">關於我們</div>
+          <div class="text-14px font-400">部落格</div>
+          <div class="text-14px font-400">加入我們</div>
+        </div>
+        <div class="text-neutral-07 flex flex-col gap-18px">
+          <div class="text-16px font-700">產品</div>
+          <div class="text-14px font-400">特色</div>
+          <div class="text-14px font-400">使用者條款</div>
+          <div class="text-14px font-400">隱私權政策</div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-18px">
+        <div class="text-neutral-07 text-16px font-700">訂閱電子報</div>
+        <div class="text-neutral-06 text-14px font-400">第一時間掌握我們的消息！</div>
+        <form
+          class="border-neutral-04 bg-neutral-01 w-360px flex justify-between border-1 rounded-20px border-solid px-20px py-8px"
+        >
+          <label for="email-address" class="sr-only">你的信箱</label>
+          <input
+            id="email-address"
+            name="email"
+            type="email"
+            autocomplete="email"
+            class="min-w-0 flex-1 border-0 rounded-20px placeholder:text-gray-400 sm:leading-6 focus:outline-0"
+            placeholder="你的信箱"
+          />
+          <button
+            type="submit"
+            class="bg-neutral-07 hover:bg-neutral-07/80 rounded-20px p-16px text-sm text-white font-500"
+          >
+            <div>確認訂閱</div>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="text-neutral-05 py-8px text-center text-18px font-400">
+      Copyright © New Digital
+    </div>
+  </footer>
 </template>
 
 <style lang="scss" scoped></style>
