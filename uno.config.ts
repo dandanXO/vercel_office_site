@@ -19,6 +19,13 @@ export default defineConfig({
             provider: 'google',
           },
         ],
+        'rammetto-one': [
+          {
+            name: 'Rammetto One',
+            weights: ['400'],
+            provider: 'google',
+          },
+        ],
       },
     }),
   ],
@@ -41,7 +48,7 @@ export default defineConfig({
       },
     },
     colors: {
-      primary: '#1E88E5',
+      primary: '#E4FF00',
     },
   },
 })

@@ -13,6 +13,7 @@
   ],
   "compilerOptions": {
     "module": "NodeNext",
+    "resolveJsonModule": true,
     "typeRoots": [
       "node_modules/@types",
       "typings"
