@@ -26,6 +26,13 @@ export default defineConfig({
             provider: 'google',
           },
         ],
+        mulish: [
+          {
+            name: 'Mulish',
+            weights: ['800'],
+            provider: 'google',
+          },
+        ],
       },
     }),
   ],
@@ -49,6 +56,7 @@ export default defineConfig({
     },
     colors: {
       primary: '#E4FF00',
+      'neutral-07': '#141414',
     },
   },
 })
