@@ -19,7 +19,7 @@ export default defineConfig({
     vueJsx(),
     AutoImport({
       dts: 'typings/auto-imports.d.ts',
-      imports: ['vue', 'vue-router'],
+      imports: ['vue', 'vue-router', '@vueuse/core'],
     }),
     UnoCSS(),
     Icons({

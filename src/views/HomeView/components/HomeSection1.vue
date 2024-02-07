@@ -22,7 +22,7 @@ const marqueeList = [
 <template>
   <div class="container">
     <div class="mt-60px flex flex-wrap xl:mt-100px xl:justify-between">
-      <div class="fade-in-bottom w-full text-center xl:w-3/5">
+      <div class="fade-in-bottom w-full text-center xl:w-3/5 xl:text-start">
         <div class="text-28px font-400 font-rammetto-one xl:text-56px">New Digit Defines</div>
         <div class="mt-14px text-28px font-400 font-rammetto-one xl:text-56px">
           Your&nbsp;
@@ -43,7 +43,12 @@ const marqueeList = [
       <div class="mt-40px w-full xl:mt-0 xl:w-2/5">
         <!-- 官方的還有bug -->
         <!-- <dot-lottie :src="lottie" class="h-304px w-359px" autoplay loop></dot-lottie> -->
-        <Vue3Lottie :animation-data="lottie" :height="304" :width="359" auto-play loop></Vue3Lottie>
+        <Vue3Lottie
+          :animation-data="lottie"
+          class="max-h-304px max-w-359px"
+          auto-play
+          loop
+        ></Vue3Lottie>
       </div>
     </div>
     <div>

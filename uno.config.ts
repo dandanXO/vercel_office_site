@@ -33,6 +33,13 @@ export default defineConfig({
             provider: 'google',
           },
         ],
+        'do-hyeon': [
+          {
+            name: 'Do Hyeon',
+            weights: ['400'],
+            provider: 'google',
+          },
+        ],
       },
     }),
   ],
@@ -41,7 +48,7 @@ export default defineConfig({
     container: {
       center: true,
       padding: {
-        DEFAULT: '20px',
+        DEFAULT: '32px',
         // sm: '2rem',
         // lg: '80px',
         // xl: '120px',
