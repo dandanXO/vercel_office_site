@@ -1,5 +1,12 @@
 <script lang="ts" setup>
 import { imgUrl } from '@/assets'
+const isMobile = () =>{
+  if(screen.width <= 700){
+    return true
+  }else{
+    return false
+  }
+}
 const contentist = [
   {
     title: '內部創業',
@@ -27,8 +34,8 @@ const landPic = imgUrl('home/section3/landPic.png')
 
 <template>
   <div class="bg-gray-100 text-gray-900">
-
-    <div class="max-w-4xl mx-auto p-5">
+    
+    <div v-if="!isMobile()" class=" mx-auto px-40 py-5">
       <!-- Title and Description -->
       <div class="text-center mb-10">
         <h1 class="text-4xl font-bold mb-2">我們的價值觀</h1>
@@ -36,10 +43,10 @@ const landPic = imgUrl('home/section3/landPic.png')
       </div>
 
       <!-- Cards and Image Layout -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+      <div class="flex justify-items-center">
         <!-- Image and text -->
-        <div class="bg-white rounded overflow-hidden shadow-lg">
-          <img class="w-full" :src="landPic" alt="Image Description">
+        <div class="flex justify-items-end mr-15">
+          <img class=" max-h-[810px] rounded-4 overflow-hidden shadow-lg" :src="landPic" alt="Image Description">
         </div>
 
         <!-- Icons and Text -->
@@ -55,7 +62,33 @@ const landPic = imgUrl('home/section3/landPic.png')
         </div>
       </div>
     </div>
+    <div v-if="isMobile()" class=" mx-auto p-5">
+      <!-- Title and Description -->
+      <div class="text-center mb-10">
+        <h1 class="text-4xl font-bold mb-2">我們的價值觀</h1>
+        <p class="mb-3 text-neutral-06">新媒體天地的核心是深度結合的多元文化 DNA，為客戶帶來的是創意與新鮮感。</p>
+      </div>
 
+      <!-- Cards and Image Layout -->
+      <div class="flex justify-center">
+        <!-- Image and text -->
+
+        <!-- Icons and Text -->
+        <div class="flex flex-col">
+          <div class="flex justify-center">
+          <img class=" max-h-[408px] max-w-[611px] rounded-4 overflow-hidden shadow-lg" :src="landPic" alt="Image Description">
+        </div>
+          <div v-for="item in contentist" :key="item.title" class="flex flex-col items-center justify-center">
+            <div class="text-white p-4 rounded-full mb-2">
+              <!-- Replace with an SVG or icon font class -->
+              <img :scr="item.icon" class="w-[96px] h-[96px]"/>
+            </div>
+            <p class="text-lg">{{ item.title }}</p>
+            <p class="text-xs text-center text-neutral-05">{{ item.contentText }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
