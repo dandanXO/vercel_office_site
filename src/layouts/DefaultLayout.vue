@@ -2,20 +2,19 @@
 import IconEarth from '@icons/nd/earth.svg'
 import IconMenu from '@icons/nd/menu.svg'
 import IconClose from '@icons/nd/close.svg'
+import IconLogoWhite from '@icons/nd/logo-white.svg'
 import DefaultLayoutDrawer from './DefaultLayoutDrawer.vue'
 import { breakpointsTailwind } from '@vueuse/core'
-import { imgUrl } from '@/assets'
 import { useAppStore } from '@/stores/app'
 import { mainNav } from './const'
 
 const breakpoints = useBreakpoints(breakpointsTailwind)
-const logoWhite = imgUrl('logo-white.svg')
 const appStore = useAppStore()
 </script>
 
 <template>
   <header class="h-88px flex items-center container">
-    <img :src="logoWhite" class="h-64px w-64px" />
+    <IconLogoWhite class="h-64px w-64px" />
     <template v-if="breakpoints.xl.value">
       <div class="flex flex-1 items-center justify-center">
         <router-link
@@ -50,7 +49,7 @@ const appStore = useAppStore()
   <footer class="border-t-2px border-white border-solid">
     <div class="flex flex-wrap justify-between py-128px container">
       <div class="flex flex-col gap-32px xl:flex-row xl:gap-80px">
-        <img :src="logoWhite" class="h-64px w-64px" />
+        <IconLogoWhite class="h-64px w-64px" />
         <div class="flex flex-col gap-18px text-neutral-07">
           <div class="text-16px font-700">關於我們</div>
           <div class="text-14px font-400">部落格</div>
