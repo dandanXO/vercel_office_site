@@ -33,6 +33,13 @@ export default defineConfig({
             provider: 'google',
           },
         ],
+        'do-hyeon': [
+          {
+            name: 'Do Hyeon',
+            weights: ['400'],
+            provider: 'google',
+          },
+        ],
       },
     }),
   ],
@@ -41,7 +48,7 @@ export default defineConfig({
     container: {
       center: true,
       padding: {
-        // DEFAULT: '1rem',
+        DEFAULT: '32px',
         // sm: '2rem',
         // lg: '80px',
         // xl: '120px',
@@ -56,6 +63,8 @@ export default defineConfig({
     },
     colors: {
       primary: '#E4FF00',
+      'primary-hover': '#CDE600',
+      'primary-disable': '#F7FFB1',
       'neutral-01': '#FFFFFF',
       'neutral-03': '#F0F0F0',
       'neutral-04': '#DDDDDD',

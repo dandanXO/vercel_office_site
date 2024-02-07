@@ -1,1 +1,5 @@
 @import url(./animate.scss);
+
+body {
+  @apply bg-neutral-03 font-sans;
+}
