@@ -19,6 +19,20 @@ export default defineConfig({
             provider: 'google',
           },
         ],
+        'rammetto-one': [
+          {
+            name: 'Rammetto One',
+            weights: ['400'],
+            provider: 'google',
+          },
+        ],
+        mulish: [
+          {
+            name: 'Mulish',
+            weights: ['800'],
+            provider: 'google',
+          },
+        ],
       },
     }),
   ],
@@ -41,8 +55,13 @@ export default defineConfig({
       },
     },
     colors: {
-      primary: '#1E88E5',
-      lightYellow: '#E4FF00'
+      primary: '#E4FF00',
+      'neutral-01': '#FFFFFF',
+      'neutral-03': '#F0F0F0',
+      'neutral-04': '#DDDDDD',
+      'neutral-05': '#A0A0A0',
+      'neutral-06': '#6B6B6B',
+      'neutral-07': '#141414',
     },
   },
 })

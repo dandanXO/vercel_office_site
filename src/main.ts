@@ -1,5 +1,6 @@
 import 'virtual:uno.css'
 import '@/assets/scss/main.scss'
+import '@unocss/reset/tailwind-compat.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
