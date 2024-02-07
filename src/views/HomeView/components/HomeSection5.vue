@@ -10,7 +10,7 @@ const items: FAQItem[] = [
   {
     question: "1. 當前貴公司提供什麼樣的業務？",
     answer:
-      '我們當前能向客戶提供以下服務：<p class="mt-3 mb-3">(1) 白標加密貨幣交易所:</p> <p class="ml-6">我們提供一站式的架站，客戶無需再自己養大量的開發人員，僅需專注在交易所的運營業務上。</p><p class="mt-3 mb-3">(2) Web3 應用:</p><p class="ml-6">我們能為客戶客製化其 Web3應用，包含 DeFi 合約、NFT 合約、各類創新 dApps。</p><p class="mt-3 mb-3">(3) 遊戲代操: </p><p class="ml-6">我們有專門運營國際線上遊戲的專業團隊，提供遊戲代操服務。</p>',
+      '我們當前能向客戶提供以下服務：<p class="mt-3 mb-3">(1) 白標加密貨幣交易所:</p> <p class="ml-6">我們提供一站式的架站，客戶無需再自己養大量的開發人員，僅需專注在交易所的運營業務上。</p><p class="mt-3 mb-3">(2) Web3 應用:</p><p class="ml-6">我們能為客戶客製化其 Web3 應用，包含 DeFi 合約、NFT 合約、各類創新 dApps。</p><p class="mt-3 mb-3">(3) 遊戲代操：</p><p class="ml-6">我們有專門運營國際線上遊戲的專業團隊，提供遊戲代操服務。</p>',
   },
   {
     question: "2. 如果有白標加密貨幣交易所的需求，請問要如何聯繫？",
@@ -38,21 +38,21 @@ const toggle = (index: number) => {
 </script>
 <template>
   <div
-    class="fade-in-bottom flex flex-col items-center justify-center p-4 bg-primary"
+    class="fade-in-bottom flex flex-col items-center justify-center bg-primary p-4"
   >
-    <div class="text-4xl font-bold mb-4 py-8">FAQ</div>
-    <div class="w-full py-8 px-30 transition-max-height">
+    <div class="mb-4 py-8 text-4xl font-bold">FAQ</div>
+    <div class="w-full px-8 py-8 transition-max-height lg:px-30">
       <div
         v-for="(item, index) in items"
         :key="index"
-        class="mb-5 bg-white rounded-3 transition-max-height"
+        class="mb-5 rounded-3 bg-white transition-max-height"
       >
         <button
-          class="flex justify-between items-center w-full px-6 py-6 bg-white rounded-3"
+          class="w-full flex items-center justify-between rounded-3 bg-white px-6 py-6"
           @click="toggle(index)"
         >
           <span>{{ item.question }}</span>
-          <span class="ml-6 arrow-button">
+          <span class="arrow-button min-w-[30px] lg:ml-6">
             <i
               class="arrow"
               :class="[activeIndex === index ? 'down' : 'right']"
@@ -64,7 +64,7 @@ const toggle = (index: number) => {
           class="overflow-hidden transition-max-height duration-300 ease-in-out"
           :style="{ maxHeight: activeIndex === index ? '1000px' : '0' }"
         >
-          <div class="p-6 !text-grey" v-html="item.answer"></div>
+          <div class="!text-grey p-6" v-html="item.answer"></div>
         </div>
       </div>
     </div>

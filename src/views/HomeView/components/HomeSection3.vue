@@ -35,7 +35,7 @@ const landPic = imgUrl('home/section3/landPic.png')
 <template>
   <div class="bg-gray-100 text-gray-900">
     
-    <div v-if="!store.isMobile" class=" mx-auto px-40 py-5">
+    <div v-if="!store.isMobile" class="mx-auto px-40 py-5">
       <!-- Title and Description -->
       <div class="mb-10 text-center">
         <h1 class="mb-2 text-4xl font-bold">我們的價值觀</h1>
@@ -68,7 +68,7 @@ const landPic = imgUrl('home/section3/landPic.png')
         </div>
       </div>
     </div>
-    <div v-if="store.isMobile" class=" mx-auto p-5">
+    <div v-if="store.isMobile" class="mx-auto p-5">
       <!-- Title and Description -->
       <div class="mb-10 text-center">
         <h1 class="mb-2 text-4xl font-bold">我們的價值觀</h1>
@@ -84,7 +84,7 @@ const landPic = imgUrl('home/section3/landPic.png')
           <div class="flex justify-center">
           <img class="max-h-[408px] max-w-[611px] overflow-hidden rounded-4 shadow-lg" :src="landPic" alt="Image Description">
         </div>
-          <div v-for="item in contentList" :key="item.title" class="flex flex-col items-center justify-center">
+          <div v-for="item in contentList" :key="item.title" class="flex flex-col items-center justify-center px-8">
             <div class="mb-2 rounded-full p-4 text-white">
               <!-- Replace with an SVG or icon font class -->
               <img :src="item.icon" class="h-[96px] w-[96px]" />
