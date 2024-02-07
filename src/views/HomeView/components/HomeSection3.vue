@@ -82,7 +82,7 @@ const landPic = imgUrl('home/section3/landPic.png')
         <!-- Icons and Text -->
         <div class="flex flex-col">
           <div class="flex justify-center">
-          <img class="max-h-[408px] max-w-[611px] overflow-hidden rounded-4 shadow-lg" :src="landPic" alt="Image Description">
+          <img class="overflow-hidden rounded-4 shadow-lg lg:max-h-[408px] lg:max-w-[611px]" :src="landPic" alt="Image Description">
         </div>
           <div v-for="item in contentList" :key="item.title" class="flex flex-col items-center justify-center px-8">
             <div class="mb-2 rounded-full p-4 text-white">
