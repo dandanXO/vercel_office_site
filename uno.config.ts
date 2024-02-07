@@ -42,6 +42,7 @@ export default defineConfig({
     },
     colors: {
       primary: '#1E88E5',
+      lightYellow: '#E4FF00'
     },
   },
 })
