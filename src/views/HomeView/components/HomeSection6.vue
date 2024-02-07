@@ -5,17 +5,17 @@ function submitForm() {
 </script>
 <template>
   <div class="p-20">
-    <div class="text-center mb-20">
-      <h1 class="text-neutral-07 text-40px mb-5">與我們聯繫</h1>
-      <h3 class="text-neutral-06 text-20px">
+    <div class="mb-20 text-center">
+      <h1 class="mb-5 text-40px text-neutral-07">與我們聯繫</h1>
+      <h3 class="text-20px text-neutral-06">
         如果你想了解任何詳細資訊，歡迎直接來信，我們會盡快回覆
       </h3>
     </div>
-    <div class="flex justify-center items-center">
+    <div class="flex items-center justify-center">
       <div class="form-wrapper">
         <form @submit.prevent="submitForm">
           <div class="flex">
-            <div class="input-group w-45% mr-10">
+            <div class="input-group mr-10 w-45%">
               <label for="name" class="text-neutral-07">姓名*</label>
               <input
                 type="text"
