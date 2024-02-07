@@ -7,8 +7,12 @@ import HomeSection4 from './HomeView/components/HomeSection4.vue'
 import HomeSection5 from './HomeView/components/HomeSection5.vue'
 import HomeSection6 from './HomeView/components/HomeSection6.vue'
 
+const windowsSize = useWindowSize()
+
 const section2Ref = ref(null)
-const targetIsVisible = useElementVisibility(section2Ref)
+// const targetIsVisible = useElementVisibility(section2Ref)
+const section2Position = useElementBounding(section2Ref)
+const targetIsVisible = computed(() => section2Position.top.value < windowsSize.height.value)
 </script>
 
 <template>
@@ -26,8 +30,11 @@ const targetIsVisible = useElementVisibility(section2Ref)
         ref="section2Ref"
       >
         <div
-          class="fade-in-bottom w-full text-center xl:w-1/3"
-          :class="[{ hidden: !targetIsVisible }, `fade-in-bottom-delay-${index}`]"
+          class="w-full text-center opacity-0 xl:w-1/3"
+          :class="[
+            { [`fade-in-bottom-delay-${index}`]: targetIsVisible },
+            // `fade-in-bottom-delay-${index}`,
+          ]"
           v-for="(item, index) in [
             { num: '5', sub: '國家' },
             { num: '100+', sub: '客戶' },
@@ -43,16 +50,16 @@ const targetIsVisible = useElementVisibility(section2Ref)
     <!-- Section 3 -->
     <HomeSection3 />
     <!-- Section 4 -->
-    <HomeSection4 class="pt-30"/>
+    <HomeSection4 class="pt-30" />
     <!-- Section 5 -->
-    <HomeSection5 class=""/>
+    <HomeSection5 class="" />
     <!-- Section 6 -->
-    <HomeSection6 class=""/>
+    <HomeSection6 class="" />
   </div>
 </template>
 
 <style lang="scss" scoped>
-.fade-in-bottom {
+.fade-in-bottom-delay-0 {
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
