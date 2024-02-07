@@ -55,7 +55,7 @@ const marqueeList = [
       <div className="mt-10 flex justify-center xl:justify-start items-center gap-x-6">
         <a
           href="#"
-          class="rounded-20px bg-primary px-24px py-16px text-17px text-black font-500 decoration-none shadow-sm hover:bg-primary/70 focus-visible:outline-2 focus-visible:outline-primary/70 focus-visible:outline-offset-2 focus-visible:outline"
+          class="rounded-20px bg-primary px-24px py-16px text-17px text-black font-500 decoration-none shadow-sm hover:bg-primary-hover focus-visible:outline-2 focus-visible:outline-primary/70 focus-visible:outline-offset-2 focus-visible:outline"
         >
           瞭解更多 <IconArrowRight class="inline"></IconArrowRight>
         </a>

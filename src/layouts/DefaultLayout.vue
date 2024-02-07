@@ -80,7 +80,7 @@ const appStore = useAppStore()
           />
           <button
             type="submit"
-            class="rounded-20px bg-primary p-16px text-sm text-black font-500 hover:bg-primary/80"
+            class="rounded-20px bg-primary p-16px text-sm text-black font-500 hover:bg-primary-hover"
           >
             <div>確認訂閱</div>
           </button>

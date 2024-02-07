@@ -63,6 +63,8 @@ export default defineConfig({
     },
     colors: {
       primary: '#E4FF00',
+      'primary-hover': '#CDE600',
+      'primary-disable': '#F7FFB1',
       'neutral-01': '#FFFFFF',
       'neutral-03': '#F0F0F0',
       'neutral-04': '#DDDDDD',
