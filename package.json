@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "preinstall": "npx -y only-allow pnpm",
+    "prepare": "husky install",
     "dev": "vite --host",
     "build": "concurrently pnpm:type-check \"pnpm:build-only \" --",
     "preview": "vite preview",
@@ -43,6 +44,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^18.6.0",
+    "@commitlint/config-conventional": "^18.6.0",
     "@rushstack/eslint-patch": "^1.7.2",
     "@tsconfig/node20": "^20.1.2",
     "@types/jsdom": "^21.1.6",
