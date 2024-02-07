@@ -15,16 +15,16 @@
   <div  class="bg-gray-100 text-gray-900">
     <div class="relative mx-auto px-8 py-5 lg:px-40">
       <img :src="backgroundImg" class="absolute right-0 -top-16" />
-      <div class="mb-10 text-center">
+      <div class="relative z-1 mb-10 text-center">
         <h1 class="mb-2 text-4xl font-bold">我們的產品</h1>
         <p class="mb-3 text-neutral-06">
           我們深入了解您的需求，並以全新的方式看待數位世界
         </p>
       </div>
       <!-- Cards 1 2 -->
-      <div class="grid grid-cols-1 lg:grid-cols-5">
+      <div class="relative z-1 grid grid-cols-1 lg:grid-cols-5">
         <!-- Card 1 -->
-        <div class="col-span-2 mb-10 flex flex-col border border-neutral-07 rounded-2xl p-6 text-center lg:mb-0 lg:mr-10">
+        <div class="col-span-2 mb-10 flex flex-col border border-neutral-07 rounded-2xl bg-neutral-03 p-6 text-center lg:mb-0 lg:mr-10">
           <div class="mb-4">
             <!-- Replace this div with actual icon -->
             <div class="mb-3 flex justify-center rounded-full text-white lg:justify-start">
@@ -44,7 +44,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="col-span-3 flex flex-col border border-neutral-07 rounded-2xl p-6 text-center">
+        <div class="col-span-3 flex flex-col border border-neutral-07 rounded-2xl bg-neutral-03 p-6 text-center">
           <div class="mb-4">
             <!-- Replace this div with actual icon -->
             <div class="mb-3 flex justify-center rounded-full text-white lg:justify-start">
@@ -64,10 +64,10 @@
         </div>
       </div>
       <!-- card 3 4 -->
-      <div class="grid grid-cols-1 mt-10 lg:grid-cols-5">
+      <div class="relative z-1 grid grid-cols-1 mt-10 lg:grid-cols-5">
 
         <!-- Card 3 -->
-        <div class="col-span-2 col-span-3 mb-10 flex flex-col border border-neutral-07 rounded-2xl p-6 text-center lg:mb-0 lg:mr-10">
+        <div class="col-span-2 col-span-3 mb-10 flex flex-col border border-neutral-07 rounded-2xl bg-neutral-03 p-6 text-center lg:mb-0 lg:mr-10">
           <div class="mb-4">
             <!-- Replace this div with actual icon -->
             <div class="mb-3 flex justify-center rounded-full text-white lg:justify-start">
@@ -87,7 +87,7 @@
         </div>
 
         <!-- Card 4 -->
-        <div class="col-span-2 flex flex-col border border-neutral-07 rounded-2xl p-6 text-center">
+        <div class="col-span-2 flex flex-col border border-neutral-07 rounded-2xl bg-neutral-03 p-6 text-center">
           <div class="mb-4">
             <!-- Replace this div with actual icon -->
             <div class="mb-3 flex justify-center rounded-full text-white lg:justify-start">

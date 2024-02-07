@@ -46,7 +46,7 @@ function submitForm() {
           </div>
           <div class="flex items-center justify-center">
             <button type="submit" class="submit-button font-size-16px">
-              确认发送 →
+              確認送出 →
             </button>
           </div>
         </form>

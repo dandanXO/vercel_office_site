@@ -52,18 +52,18 @@ const landPic = imgUrl('home/section3/landPic.png')
         </div>
 
         <!-- Icons and Text -->
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-2 w-full">
           <div
             v-for="item in contentList"
             :key="item.title"
-            class="flex flex-col items-center justify-center"
+            class="flex flex-col items-center justify-center text-2xl"
           >
             <div class="mb-2 rounded-full p-4 text-white">
               <!-- Replace with an SVG or icon font class -->
               <img :src="item.icon" class="h-[96px] w-[96px]" />
             </div>
             <p class="text-lg">{{ item.title }}</p>
-            <p class="text-center text-xs text-neutral-05">{{ item.contentText }}</p>
+            <p class="text-center text-lg text-neutral-05">{{ item.contentText }}</p>
           </div>
         </div>
       </div>

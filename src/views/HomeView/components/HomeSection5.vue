@@ -64,7 +64,7 @@ const toggle = (index: number) => {
           class="overflow-hidden transition-max-height duration-300 ease-in-out"
           :style="{ maxHeight: activeIndex === index ? '1000px' : '0' }"
         >
-          <div class="!text-grey p-6" v-html="item.answer"></div>
+          <div class="p-6 !text-neutral-05" v-html="item.answer"></div>
         </div>
       </div>
     </div>
