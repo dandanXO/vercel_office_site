@@ -35,7 +35,7 @@ const landPic = imgUrl('home/section3/landPic.png')
       <!-- Title and Description -->
       <div class="mb-10 text-center">
         <h1 class="mb-2 text-4xl font-bold">我們的價值觀</h1>
-        <p class="text-neutral-06 mb-3">
+        <p class="mb-3 text-neutral-06">
           新媒體天地的核心是深度結合的多元文化 DNA，為客戶帶來的是創意與新鮮感。
         </p>
       </div>
@@ -59,7 +59,7 @@ const landPic = imgUrl('home/section3/landPic.png')
               <img :src="item.icon" class="h-[96px] w-[96px]" />
             </div>
             <p class="text-lg">{{ item.title }}</p>
-            <p class="text-neutral-05 text-center text-xs">{{ item.contentText }}</p>
+            <p class="text-center text-xs text-neutral-05">{{ item.contentText }}</p>
           </div>
         </div>
       </div>

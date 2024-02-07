@@ -23,8 +23,8 @@ const marqueeList = [
   <div class="container">
     <div class="mt-100px flex justify-between">
       <div class="fade-in-bottom w-3/5">
-        <div class="font-rammetto-one text-56px font-400">New Digit Defines</div>
-        <div class="font-rammetto-one mt-14px text-56px font-400">
+        <div class="text-56px font-400 font-rammetto-one">New Digit Defines</div>
+        <div class="mt-14px text-56px font-400 font-rammetto-one">
           Your&nbsp;
           <span class="border-6px border-primary border-rounded-40px border-solid px-24px py-8px">
             Digits

@@ -25,10 +25,10 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,tsx,ts}": [
-      "eslint . --fix"
+      "pnpm lint . --fix"
     ],
     "src/**/*.vue": [
-      "eslint . --fix",
+      "pnpm lint . --fix",
       "stylelint --fix"
     ],
     "src/**/*.{scss,css}": "stylelint --fix"
