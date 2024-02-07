@@ -58,8 +58,8 @@ const mainNav = [
   </main>
 
   <footer class="border-t-2px border-white border-solid">
-    <div class="flex justify-between py-128px container">
-      <div class="flex gap-80px">
+    <div class="flex flex-wrap justify-between py-128px container">
+      <div class="flex flex-col gap-32px lg:flex-row lg:gap-80px">
         <img :src="logoWhite" class="h-64px w-64px" />
         <div class="flex flex-col gap-18px text-neutral-07">
           <div class="text-16px font-700">關於我們</div>
@@ -73,11 +73,11 @@ const mainNav = [
           <div class="text-14px font-400">隱私權政策</div>
         </div>
       </div>
-      <div class="flex flex-col gap-18px">
+      <div class="mt-64px w-full flex flex-col gap-18px lg:mt-0">
         <div class="text-16px text-neutral-07 font-700">訂閱電子報</div>
         <div class="text-14px text-neutral-06 font-400">第一時間掌握我們的消息！</div>
         <form
-          class="w-360px flex justify-between border-1 border-neutral-04 rounded-20px border-solid bg-neutral-01 px-20px py-8px"
+          class="flex justify-between border-1 border-neutral-04 rounded-20px border-solid bg-neutral-01 px-20px py-8px lg:w-360px"
         >
           <label for="email-address" class="sr-only">你的信箱</label>
           <input
@@ -90,7 +90,7 @@ const mainNav = [
           />
           <button
             type="submit"
-            class="rounded-20px bg-neutral-07 p-16px text-sm text-white font-500 hover:bg-neutral-07/80"
+            class="rounded-20px bg-primary p-16px text-sm text-black font-500 hover:bg-primary/80"
           >
             <div>確認訂閱</div>
           </button>

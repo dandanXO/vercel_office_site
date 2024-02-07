@@ -41,7 +41,7 @@ export default defineConfig({
     container: {
       center: true,
       padding: {
-        // DEFAULT: '1rem',
+        DEFAULT: '20px',
         // sm: '2rem',
         // lg: '80px',
         // xl: '120px',
