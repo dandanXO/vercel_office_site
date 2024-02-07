@@ -62,7 +62,7 @@ const appStore = useAppStore()
           <div class="text-14px font-400">隱私權政策</div>
         </div>
       </div>
-      <div class="mt-64px w-full flex flex-col gap-18px xl:mt-0">
+      <div class="mt-64px w-full flex flex-col gap-18px xl:mt-0 xl:w-auto">
         <div class="text-16px text-neutral-07 font-700">訂閱電子報</div>
         <div class="text-14px text-neutral-06 font-400">第一時間掌握我們的消息！</div>
         <form

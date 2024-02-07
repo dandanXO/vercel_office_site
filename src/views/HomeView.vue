@@ -6,6 +6,9 @@ import HomeSection3 from './HomeView/components/HomeSection3.vue'
 import HomeSection4 from './HomeView/components/HomeSection4.vue'
 import HomeSection5 from './HomeView/components/HomeSection5.vue'
 import HomeSection6 from './HomeView/components/HomeSection6.vue'
+
+const section2Ref = ref(null)
+const targetIsVisible = useElementVisibility(section2Ref)
 </script>
 
 <template>
@@ -18,9 +21,13 @@ import HomeSection6 from './HomeView/components/HomeSection6.vue'
       <div class="relative z-1 hidden text-center text-40px text-white font-700 xl:block">
         定義全新的企業數字 DNA
       </div>
-      <div class="relative z-1 flex flex-wrap justify-between gap-60px xl:mt-80px xl:gap-0">
+      <div
+        class="relative z-1 flex flex-wrap justify-between gap-60px xl:mt-80px xl:gap-0"
+        ref="section2Ref"
+      >
         <div
-          class="w-full text-center xl:w-1/3"
+          class="fade-in-bottom w-full text-center xl:w-1/3"
+          :class="[{ hidden: !targetIsVisible }, `fade-in-bottom-delay-${index}`]"
           v-for="(item, index) in [
             { num: '5', sub: '國家' },
             { num: '100+', sub: '客戶' },
@@ -44,4 +51,17 @@ import HomeSection6 from './HomeView/components/HomeSection6.vue'
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.fade-in-bottom {
+  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.fade-in-bottom-delay-1 {
+  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+  animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+}
+.fade-in-bottom-delay-2 {
+  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+  animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+}
+</style>
