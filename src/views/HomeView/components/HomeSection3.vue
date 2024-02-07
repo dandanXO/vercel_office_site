@@ -1,12 +1,8 @@
 <script lang="ts" setup>
 import { imgUrl } from '@/assets'
-const isMobile = () =>{
-  if(screen.width <= 700){
-    return true
-  }else{
-    return false
-  }
-}
+import { useMobileStore } from '@/stores/isMobile'
+const store = useMobileStore()
+
 const contentList = [
   {
     title: '內部創業',
@@ -39,7 +35,7 @@ const landPic = imgUrl('home/section3/landPic.png')
 <template>
   <div class="bg-gray-100 text-gray-900">
     
-    <div v-if="!isMobile()" class=" mx-auto px-40 py-5">
+    <div v-if="!store.isMobile" class=" mx-auto px-40 py-5">
       <!-- Title and Description -->
       <div class="mb-10 text-center">
         <h1 class="mb-2 text-4xl font-bold">我們的價值觀</h1>
@@ -72,7 +68,7 @@ const landPic = imgUrl('home/section3/landPic.png')
         </div>
       </div>
     </div>
-    <div v-if="isMobile()" class=" mx-auto p-5">
+    <div v-if="store.isMobile" class=" mx-auto p-5">
       <!-- Title and Description -->
       <div class="text-center mb-10">
         <h1 class="text-4xl font-bold mb-2">我們的價值觀</h1>

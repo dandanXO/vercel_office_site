@@ -3,6 +3,9 @@ import { imgUrl } from '@/assets'
 import IconEarth from '@icons/nd/earth.svg'
 import HomeSection1 from './HomeView/components/HomeSection1.vue'
 import HomeSection3 from './HomeView/components/HomeSection3.vue'
+import HomeSection4 from './HomeView/components/HomeSection4.vue'
+import HomeSection5 from './HomeView/components/HomeSection5.vue'
+import HomeSection6 from './HomeView/components/HomeSection6.vue'
 
 const logoWhite = imgUrl('logo-white.svg')
 const mainNav = [
@@ -55,6 +58,12 @@ const mainNav = [
     </div>
     <!-- Section 3 -->
     <HomeSection3 />
+    <!-- Section 4 -->
+    <HomeSection4 class="pt-30"/>
+    <!-- Section 5 -->
+    <HomeSection5 class=""/>
+    <!-- Section 6 -->
+    <HomeSection6 class=""/>
   </main>
 
   <footer class="border-t-2px border-white border-solid">
