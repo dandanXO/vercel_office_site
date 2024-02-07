@@ -62,7 +62,7 @@ const marqueeList = [
       </div>
     </div>
     <div class="mt-100px">
-      <Vue3Marquee>
+      <Vue3Marquee :duration="15">
         <img v-for="(item, index) in marqueeList" :key="index" :src="item" class="mx-40px" />
       </Vue3Marquee>
     </div>
