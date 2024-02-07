@@ -14,19 +14,19 @@ const items: FAQItem[] = [
   },
   {
     question: "2. 如果有白標加密貨幣交易所的需求，請問要如何聯繫？",
-    answer: `請 Mail 給我們公關業務經理 <a class="text-blue" href="mailto:zoe@newdigit.io">zoe@newdigit.io</a>`,
+    answer: `請 Mail 給我們公關業務經理&nbsp; <a class="text-blue" href="mailto:zoe@newdigit.io">zoe@newdigit.io</a>`,
   },
   {
     question: "3. 如果有 Web3 應用的需求，請問要如何聯繫？",
-    answer: `請 Mail 給我們公關業務經理<a class="text-blue" href="mailto:zoe@newdigit.io">zoe@newdigit.io</a>`,
+    answer: `請 Mail 給我們公關業務經理&nbsp;<a class="text-blue" href="mailto:zoe@newdigit.io">zoe@newdigit.io</a>`,
   },
   {
     question: "4. 如果您為遊戲提供商，有遊戲代操的需求，請問要如何聯繫？",
-    answer: `請 Mail 給我們公關業務經理<a class="text-blue" href="mailto:zoe@newdigit.io">zoe@newdigit.io</a>`
+    answer: `請 Mail 給我們公關業務經理&nbsp;<a class="text-blue" href="mailto:zoe@newdigit.io">zoe@newdigit.io</a>`
   },
   {
     question: "5. 如果有其他商業合作，請問要如何聯繫？",
-    answer: `請 Mail 給我們公關業務經理<a class="text-blue" href="mailto:zoe@newdigit.io">zoe@newdigit.io</a>`
+    answer: `請 Mail 給我們公關業務經理&nbsp;<a class="text-blue" href="mailto:zoe@newdigit.io">zoe@newdigit.io</a>`
   },
 ];
 

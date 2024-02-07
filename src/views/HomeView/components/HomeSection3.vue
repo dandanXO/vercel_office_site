@@ -8,25 +8,25 @@ const contentList = [
     title: '內部創業',
     icon: imgUrl('home/section3/icon1.png'),
     contentText:
-      '我們致力於打造自有 IP 以打通遊戲、影視娛樂、商品周邊產業的全方位經紀公司，提供獨特的核心玩法。',
+      'Internal entrepreneurship',
   },
   {
     title: '快樂樂趣',
     icon: imgUrl('home/section3/icon2.png'),
     contentText:
-      '我們致力於打造自有 IP 以打通遊戲、影視娛樂、商品周邊產業的全方位經紀公司，提供獨特的核心玩法。',
+      'Gaming enjoyment',
   },
   {
     title: '激動驅動',
     icon: imgUrl('home/section3/icon3.png'),
     contentText:
-      '我們致力於打造自有 IP 以打通遊戲、影視娛樂、商品周邊產業的全方位經紀公司，提供獨特的核心玩法。',
+      'Incentive-driven',
   },
   {
     title: '快速迭代',
     icon: imgUrl('home/section3/icon4.png'),
     contentText:
-      '我們致力於打造自有 IP 以打通遊戲、影視娛樂、商品周邊產業的全方位經紀公司，提供獨特的核心玩法。',
+      'Rapid iteration',
   },
 ]
 const landPic = imgUrl('home/section3/landPic.png')
