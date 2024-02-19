@@ -27,3 +27,25 @@
     opacity: 1;
   }
 }
+
+/**
+ * ----------------------------------------
+ * animation bounce
+ * ----------------------------------------
+ */
+@keyframes bounce {
+  from {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}

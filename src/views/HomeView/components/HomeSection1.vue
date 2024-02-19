@@ -64,9 +64,9 @@ const marqueeList = [
       <div class="w-full flex justify-center">
         <button
           type="submit"
-          class="rounded-full bg-primary p-14px text-neutral-07 hover:bg-primary-hover"
+          class="rotate-180 rounded-full bg-primary p-14px text-neutral-07 hover:bg-primary-hover"
         >
-          <IconChavronUp class="h-32px w-32px rotate-180"></IconChavronUp>
+          <IconChavronUp class="bounce h-32px w-32px"></IconChavronUp>
         </button>
       </div>
     </div>
@@ -180,5 +180,10 @@ const marqueeList = [
   animation: rotateAnimation 150s linear infinite; /* 應用旋轉動畫，每次動畫持續 50 秒，無限次重復 */
   margin: 20px; /* 為了更好的展示效果，添加一些外邊距 */
   z-index: -2;
+}
+
+.bounce {
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
 }
 </style>
