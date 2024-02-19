@@ -26,31 +26,15 @@ export default defineConfig({
             provider: 'google',
           },
         ],
-        'rammetto-one': [
-          {
-            name: 'Rammetto One',
-            weights: ['400'],
-            provider: 'google',
-          },
-        ],
-        mulish: [
-          {
-            name: 'Mulish',
-            weights: ['800'],
-            provider: 'google',
-          },
-        ],
-        'do-hyeon': [
-          {
-            name: 'Do Hyeon',
-            weights: ['400'],
-            provider: 'google',
-          },
-        ],
       },
     }),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
+  shortcuts: {
+    'header-1': 'text-40px font-700 leading-60px tracking-0.8px text-neutral-07',
+    'header-2': 'text-32px font-500 leading-48px tracking-0.6px text-neutral-07',
+    'title-md': 'text-24px font-700 leading-[34.8px] tracking-[2%] text-neutral-07',
+  },
   theme: {
     container: {
       center: true,
@@ -70,7 +54,7 @@ export default defineConfig({
     },
     colors: {
       primary: '#E4FF00',
-      'primary-bg':'#FEFFF4',
+      'primary-bg': '#FEFFF4',
       'primary-hover': '#CDE600',
       'primary-disable': '#F7FFB1',
       'neutral-01': '#FFFFFF',
