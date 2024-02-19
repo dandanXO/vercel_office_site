@@ -3,6 +3,7 @@ import '@/assets/scss/main.scss'
 import '@unocss/reset/tailwind-compat.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import 'aos/dist/aos.css'
 
 import App from './App.vue'
 import router from './router'

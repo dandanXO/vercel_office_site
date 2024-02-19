@@ -70,6 +70,7 @@ export default defineConfig({
     },
     colors: {
       primary: '#E4FF00',
+      'primary-bg':'#FEFFF4',
       'primary-hover': '#CDE600',
       'primary-disable': '#F7FFB1',
       'neutral-01': '#FFFFFF',
