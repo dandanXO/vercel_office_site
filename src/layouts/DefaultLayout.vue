@@ -47,9 +47,11 @@ const appStore = useAppStore()
   </main>
 
   <footer class="border-t-2px border-white border-solid">
-    <div class="flex flex-wrap justify-between py-128px container">
+    <div
+      class="flex flex-col flex-wrap items-center justify-between gap-32px py-40px container xl:flex-row xl:py-120px"
+    >
+      <IconLogoWhite class="h-64px w-64px" />
       <div class="flex flex-col gap-32px xl:flex-row xl:gap-80px">
-        <IconLogoWhite class="h-64px w-64px" />
         <div class="flex flex-col gap-18px text-neutral-07">
           <div class="text-16px font-700">關於我們</div>
           <div class="text-14px font-400">部落格</div>
@@ -62,7 +64,7 @@ const appStore = useAppStore()
           <div class="text-14px font-400">隱私權政策</div>
         </div>
       </div>
-      <div class="mt-64px w-full flex flex-col gap-18px xl:mt-0 xl:w-auto">
+      <!-- <div class="mt-64px w-full flex flex-col gap-18px xl:mt-0 xl:w-auto">
         <div class="text-16px text-neutral-07 font-700">訂閱電子報</div>
         <div class="text-14px text-neutral-06 font-400">第一時間掌握我們的消息！</div>
         <form
@@ -84,9 +86,9 @@ const appStore = useAppStore()
             <div>確認訂閱</div>
           </button>
         </form>
-      </div>
+      </div> -->
     </div>
-    <div class="py-8px text-center text-16px text-neutral-05 font-400 font-do-hyeon">
+    <div class="py-8px text-center text-16px text-neutral-05 font-500 font-raleway">
       Copyright © New Digital
     </div>
   </footer>

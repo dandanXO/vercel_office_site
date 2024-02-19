@@ -19,6 +19,13 @@ export default defineConfig({
             provider: 'google',
           },
         ],
+        raleway: [
+          {
+            name: 'Raleway',
+            weights: ['500'],
+            provider: 'google',
+          },
+        ],
         'rammetto-one': [
           {
             name: 'Rammetto One',
