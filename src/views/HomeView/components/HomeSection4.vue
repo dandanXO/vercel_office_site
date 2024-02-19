@@ -10,7 +10,7 @@
 const Vector = imgUrl('home/section3/Vector.svg')
 </script>
 <template>
-  <div  class="bg-primary-bg text-gray-900">
+  <div  class="relative z-2 bg-primary-bg text-gray-900">
     <div class="relative mx-auto px-8 py-5 lg:px-30">
       <div class="relative z-1 mb-10 flex flex-col items-center justify-center text-center">
         <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />

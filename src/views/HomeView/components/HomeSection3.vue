@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 import { imgUrl } from '@/assets'
-import { useMobileStore } from '@/stores/isMobile'
-const store = useMobileStore()
 const section3Ref = ref(null)
-
-
+import { useWindowSize } from '@vueuse/core'
+import { useElementSize } from '@vueuse/core'
+const { width:windowWidth, height:windowHeight } = useWindowSize()
+const { width:eW, height:eH } = useElementSize(section3Ref)
 
 import { onMounted } from "vue";
 import AOS from 'aos';
@@ -19,42 +19,43 @@ const contentList = [
     icon: imgUrl('home/section3/icon1.png'),
     contentText:
       'Internal entrepreneurship',
-    class: 'm-t-50'
+    class: 'lg:m-t-50'
   },
   {
     title: '快樂樂趣',
     icon: imgUrl('home/section3/icon2.png'),
     contentText:
       'Gaming enjoyment',
-    class: 'm-b-50'
+    class: 'lg:m-b-90'
   },
   {
     title: '激動驅動',
     icon: imgUrl('home/section3/icon3.png'),
     contentText:
       'Incentive-driven',
-    class: 'm-t-30'
+    class: 'lg:m-t-60'
   },
   {
     title: '快速迭代',
     icon: imgUrl('home/section3/icon4.png'),
     contentText:
       'Rapid iteration',
-    class: 'm-b-30'
+    class: 'lg:m-b-60'
   },
 ]
 const Vector = imgUrl('home/section3/Vector.svg')
 </script>
 
 <template>
-  <div class="bg-primary-bg text-gray-900">
+  <div class="overflow-hidden bg-primary-bg text-gray-900">
     
-    <div v-if="!store.isMobile" class="mx-auto px-20 py-10">
+    <div class="relative mx-auto px-6 py-10 lg:px-20">
       <!-- Title and Description -->
       <div class="mb-10 flex flex-col items-center justify-center text-center">
         <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />
         <h1 class="mb-2 text-4xl font-bold">我們的價值觀</h1>
         <p class="mb-3 text-neutral-06">
+          {{ eW }}?{{ eH }}
           新數字致力於為客戶定義全新的企業數字 DNA，為客戶在原有的賽道創造新藍海
         </p>
       </div>
@@ -62,13 +63,13 @@ const Vector = imgUrl('home/section3/Vector.svg')
       <!-- Cards and Image Layout -->
       <div class="flex justify-items-center">
         <!-- Icons and Text -->
-        <div class="w-full flex flex-row" ref="section3Ref">
+        <div class="w-full flex flex-col items-center lg:flex-row" ref="section3Ref">
           <div
             v-for="item in contentList"
             data-aos="fade-up"
             data-aos-duration="2000"
             :key="item.title"
-            :class="['w-1/4 flex flex-col items-center justify-center text-2xl', item.class]"
+            :class="['hover-zoom','w-full lg:w-1/4 flex flex-col items-center justify-center text-2xl relative z-2', item.class]"
           >
             <div class="mb-2 rounded-full p-4 text-white">
               <!-- Replace with an SVG or icon font class -->
@@ -79,13 +80,52 @@ const Vector = imgUrl('home/section3/Vector.svg')
           </div>
         </div>
       </div>
+      <div  
+            class="dashed-circle"
+            :class="['hidden lg:block']"
+            :style="{width: eW+'px', height:eW+'px',bottom: -(eW/eH)*43+'%'}">
+      </div>
+      <div  
+            class="dashed-circle"
+            :style="{width: eW*0.81+'px', height:eW*0.81+'px', bottom: -(eW/eH)*35+'%', left:'14%'}">
+      </div>
+      <div  
+            class="dashed-circle"
+            :style="{width: eW*0.7+'px', height:eW*0.7+'px', bottom: -(eW/eH)*33+'%', left:'19.5%'}">
+      </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.fade-in-bottom{
-  -webkit-animation: fade-in-bottom 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in-bottom 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
+
+.dashed-circle {
+  width: 100px; /* 圓形的直徑 */
+  height: 100px; /* 圓形的直徑 */
+  border: 4px dashed #DDDDDD; /* 設置邊框為黑色虛線 */
+  border-radius: 50%; /* 使邊框呈現圓形 */
+  position: absolute;
+  bottom:0px;
+  animation: rotateAnimation 150s linear infinite; /* 應用旋轉動畫，每次動畫持續 50 秒，無限次重復 */
+  margin: 20px; /* 為了更好的展示效果，添加一些外邊距 */
+  z-index: 1;
+}
+
+.hover-zoom {
+  transition: transform 0.3s ease-in-out !important;
+  cursor: pointer; /* 鼠标悬停时显示指针样式 */
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1)  translateY(-10px); /* 放大并上浮 */
+}
+
 </style>
