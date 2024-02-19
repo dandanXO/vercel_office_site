@@ -88,7 +88,7 @@ const appStore = useAppStore()
         </form>
       </div> -->
     </div>
-    <div class="py-8px text-center text-16px text-neutral-05 font-500 font-raleway">
+    <div class="py-8px text-center text-14px text-neutral-05 font-500 font-raleway xl:text-16px">
       Copyright © New Digital
     </div>
   </footer>
