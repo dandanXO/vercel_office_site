@@ -1,56 +1,23 @@
 <script setup lang="ts">
-function submitForm() {
-  // 表单提交逻辑
-}
+  import IconArrowRight from '@icons/nd/arrow-right.svg'
 </script>
 <template>
-  <div class="border-b-2px border-white border-solid py-20 lg:p-20">
-    <div class="mb-20 text-center">
-      <h1 class="mb-5 text-32px text-neutral-07 lg:text-40px">與我們聯繫</h1>
-      <h3 class="text-15px text-neutral-06 max-md:px-10% lg:text-20px">
+  <div class="border-b-2px border-white border-solid bg-primary-bg py-20 lg:p-20">
+    <div class="mb-2 text-center">
+      <h1 class="mb-5 text-32px text-neutral-07 lg:text-40px">有任何需求嗎？</h1>
+      <h3 class="text-md text-neutral-06 max-md:px-10% lg:text-20px">
         如果你想了解任何詳細資訊，歡迎直接來信，我們會盡快回覆
       </h3>
     </div>
     <div class="flex items-center justify-center max-md:bg-white">
-      <div class="w-100% border-rounded-40px bg-white p-5% lg:w-80%">
-        <form @submit.prevent="submitForm">
-          <div class="lg:flex">
-            <div class="input-group mr-10 w-100% lg:w-45%">
-              <label for="name" class="font-size-20px text-neutral-07 fw-700"
-                >姓名*</label
-              >
-              <input
-                type="text"
-                id="name"
-                placeholder="輸入你的姓名"
-                required
-              />
-            </div>
-            <div class="input-group w-100% lg:w-45%">
-              <label for="email" class="font-size-20px text-neutral-07 fw-700"
-                >Email*</label
-              >
-              <input
-                type="email"
-                id="email"
-                placeholder="輸入 Email"
-                required
-              />
-            </div>
-          </div>
-          <div class="input-group">
-            <label for="message" class="font-size-20px text-neutral-07 fw-700"
-              >留言*</label
+      <div className="mt-4 flex justify-center lg:justify-start">
+            <a
+              href="#"
+              class="rounded-20px bg-primary px-24px py-16px text-17px text-sm text-black font-500 decoration-none shadow-sm hover:bg-neutral-07 hover:text-white focus-visible:outline-2 focus-visible:outline-primary/70 focus-visible:outline-offset-2 focus-visible:outline"
             >
-            <textarea id="message" required class="h-240px"></textarea>
+              瞭解更多 <IconArrowRight class="inline"></IconArrowRight>
+            </a>
           </div>
-          <div class="flex items-center justify-center">
-            <button type="submit" class="submit-button font-size-16px">
-              確認送出 →
-            </button>
-          </div>
-        </form>
-      </div>
     </div>
   </div>
 </template>

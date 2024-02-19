@@ -38,17 +38,18 @@ const toggle = (index: number) => {
 </script>
 <template>
   <div
-    class="fade-in-bottom flex flex-col items-center justify-center bg-primary p-4"
+    class="fade-in-bottom flex flex-col items-center justify-center bg-primary-bg p-4 pt-30"
   >
-    <div class="mb-4 py-8 text-4xl font-bold">FAQ</div>
-    <div class="w-full px-8 py-8 transition-max-height lg:px-30">
+    <div class="mb-10 text-4xl font-black">FAQ</div>
+    <div class="w-full px-8 pb-8 transition-max-height lg:px-30">
       <div
         v-for="(item, index) in items"
         :key="index"
         class="mb-5 rounded-3 bg-white transition-max-height"
       >
         <button
-          class="w-full flex items-center justify-between rounded-3 bg-white px-6 py-6"
+          class="w-full flex items-center justify-between rounded-t-3 bg-primary px-6 py-6"
+          :class="[{'rounded-b-3':activeIndex !== index }]"
           @click="toggle(index)"
         >
           <span>{{ item.question }}</span>
@@ -61,10 +62,10 @@ const toggle = (index: number) => {
         </button>
         <div
           v-show="activeIndex === index"
-          class="overflow-hidden transition-max-height duration-300 ease-in-out"
+          class="overflow-hidden rounded-b-3 bg-primary transition-max-height duration-300 ease-in-out"
           :style="{ maxHeight: activeIndex === index ? '1000px' : '0' }"
         >
-          <div class="p-6 !text-neutral-05" v-html="item.answer"></div>
+          <div class="p-6" v-html="item.answer"></div>
         </div>
       </div>
     </div>
