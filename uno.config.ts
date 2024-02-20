@@ -22,7 +22,7 @@ export default defineConfig({
         raleway: [
           {
             name: 'Raleway',
-            weights: ['500'],
+            weights: ['500', '700', '900'],
             provider: 'google',
           },
         ],
@@ -33,6 +33,7 @@ export default defineConfig({
   shortcuts: {
     'header-1': 'text-40px font-700 leading-60px tracking-0.8px text-neutral-07',
     'header-2': 'text-32px font-500 leading-48px tracking-0.6px text-neutral-07',
+    'heading-3': 'text-24px font-700 leading-36px tracking-0.6px text-neutral-06',
     'title-md': 'text-24px font-700 leading-[34.8px] tracking-[2%] text-neutral-07',
   },
   theme: {
