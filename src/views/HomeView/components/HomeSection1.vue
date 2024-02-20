@@ -60,10 +60,11 @@ onMounted(() => {
             >Your <IconVector2 class="inline h-48px w-43px"></IconVector2
           ></span>
 
-          <span
-            class="relative text-80px text-primary-hover font-900 leading-94px tracking-[4%] after:absolute after:right-0 after:top-50% after:h-72px after:transform after:border-r-7px after:border-neutral-07 after:rounded-4px after:content-empty after:-translate-y-1/2"
-          >
-            Future
+          <span class="relative text-80px text-primary-hover font-900 leading-94px tracking-[4%]">
+            {{ titleType.output }}
+            <span
+              class="after:absolute after:right-0 after:top-50% after:ml-20px after:h-72px after:transform after:border-r-7px after:border-neutral-07 after:rounded-4px after:content-empty after:-translate-y-1/2"
+            ></span>
           </span>
           <span
             class="px-10 text-80px text-neutral-07 font-900 leading-94px tracking-[4%] font-raleway"
