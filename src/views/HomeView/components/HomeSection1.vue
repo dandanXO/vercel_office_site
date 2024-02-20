@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Vue3Marquee } from 'vue3-marquee'
 // import { DotLottieVue as DotLottie } from '@lottiefiles/dotlottie-vue'
-
+import EasyTyper from 'easy-typer-js'
 import { imgUrl } from '@/assets'
 
 import IconChavronUp from '@icons/nd/chavron-up.svg'
@@ -21,6 +21,31 @@ const marqueeList = [
   imgUrl('home/arc.png'),
   imgUrl('home/byte-dance.png'),
 ]
+const titleType = reactive({
+  output: '',
+  isEnd: false,
+  speed: 80,
+  singleBack: false,
+  sleep: 500,
+  type: 'rollback',
+  backSpeed: 80,
+  sentencePause: false,
+})
+
+function startType() {
+  new EasyTyper(
+    titleType,
+    ['Future', 'Digits', 'Destiny'],
+    () => {
+      startType()
+    },
+    () => {}
+  )
+}
+
+onMounted(() => {
+  startType()
+})
 </script>
 
 <template>
@@ -55,7 +80,7 @@ const marqueeList = [
         </div>
         <div class="my-4 text-40px font-900 leading-46px tracking-[4%] font-raleway">
           <IconVector2 class="mr-8px inline h-40px w-40px"></IconVector2>
-          <span class="text-primary-hover">Future</span>
+          <span class="text-primary-hover">{{ titleType.output }}</span>
           <span class="ml-12px mr-8px border border-r-4px border-neutral-07 rounded-4px"></span>
           <span class="px-10px">.</span>
         </div>

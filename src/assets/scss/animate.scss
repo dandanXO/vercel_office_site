@@ -35,17 +35,17 @@
  */
 @keyframes bounce {
   from {
-    transform: translateY(5px);
+    transform: translateY(2px);
   }
   to {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
   }
 }
 @-webkit-keyframes bounce {
   from {
-    transform: translateY(5px);
+    transform: translateY(2px);
   }
   to {
-    transform: translateY(-5px);
+    transform: translateY(-2px);
   }
 }
