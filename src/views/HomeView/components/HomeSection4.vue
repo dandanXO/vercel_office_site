@@ -28,7 +28,7 @@ const Vector = imgUrl('home/section3/Vector.svg')
             <div class="mb-3 flex justify-center rounded-full text-white lg:justify-start">
               <img :src="iconList[0]" class="h-[96px] w-[96px]" />
             </div>
-            <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">WEB 3</h3>
+            <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">區塊鏈外包</h3>
             <p class="text-center text-xs text-neutral-05 lg:text-left">Web3.0 打造由代幣經濟驅動的互聯網，新數字將協助你與你的企業打造 Web3 新藍海。</p>
           </div>
           <div className="mt-10 flex justify-center lg:justify-start">
@@ -48,7 +48,7 @@ const Vector = imgUrl('home/section3/Vector.svg')
             <div class="mb-3 flex justify-center rounded-full text-white lg:justify-start">
               <img :src="iconList[1]" class="h-[96px] w-[96px]" />
             </div>
-            <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">遊戲</h3>
+            <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">遊戲開發外包</h3>
             <p class="text-center text-xs text-neutral-05 lg:text-left">我們致力於打造自有 IP 以打通遊戲、影視娛樂、商品周邊產業的全方位經紀公司，提供獨特的核心玩法、精緻的美術風格和令人難以抗拒的遊戲機制。</p>
           </div>
           <div className="mt-10 flex justify-center lg:justify-start">
@@ -71,8 +71,8 @@ const Vector = imgUrl('home/section3/Vector.svg')
             <div class="mb-3 flex justify-center rounded-full text-white lg:justify-start">
               <img :src="iconList[2]" class="h-[96px] w-[96px]" />
             </div>
-            <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">AI+</h3>
-            <p class="text-center text-xs text-neutral-05 lg:text-left">我們將「人工智能」作為當前行業科技化發展的核心特徵並提取出來，並與工業、商業、金融業各行各業全面融合。</p>
+            <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">社群/粉絲流量增長</h3>
+            <p class="text-center text-xs text-neutral-05 lg:text-left">提供多種高級專業功能，包括分析工具、社交媒體整合、定製內容創建和排程功能，助您打造更具吸引力的社群內容，增加互動和分享，從而實現社群的持續成長。</p>
           </div>
           <div className="mt-10 flex justify-center lg:justify-start">
             <a
@@ -91,7 +91,7 @@ const Vector = imgUrl('home/section3/Vector.svg')
             <div class="mb-3 flex justify-center rounded-full text-white lg:justify-start">
               <img :src="iconList[3]" class="h-[96px] w-[96px]" />
             </div>
-            <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">綠色行動</h3>
+            <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">ESG 企業內部實踐</h3>
             <p class="text-center text-xs text-neutral-05 lg:text-left">滿足當代人的需求又不危及後代人滿足其需求的發展，稱之為永續。我們將用科技的力量，具現化一種被人類遺忘的心能力。</p>
           </div>
           <div className="mt-10 flex justify-center lg:justify-start">
