@@ -3,7 +3,6 @@ import { imgUrl } from '@/assets'
 const section3Ref = ref(null)
 import { useWindowSize } from '@vueuse/core'
 import { useElementSize } from '@vueuse/core'
-const { width:windowWidth, height:windowHeight } = useWindowSize()
 const { width:eW, height:eH } = useElementSize(section3Ref)
 
 import { onMounted } from "vue";
@@ -55,7 +54,6 @@ const Vector = imgUrl('home/section3/Vector.svg')
         <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />
         <h1 class="mb-2 text-4xl font-bold">我們的價值觀</h1>
         <p class="mb-3 text-neutral-06">
-          {{ eW }}?{{ eH }}
           新數字致力於為客戶定義全新的企業數字 DNA，為客戶在原有的賽道創造新藍海
         </p>
       </div>
