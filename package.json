@@ -40,6 +40,7 @@
     "@types/aos": "^3.0.7",
     "@vueuse/core": "^10.7.2",
     "aos": "^2.3.4",
+    "easy-typer-js": "^2.1.0",
     "pinia": "^2.1.7",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5",
