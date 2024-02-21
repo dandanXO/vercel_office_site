@@ -78,18 +78,20 @@ const Vector = imgUrl('home/section3/Vector.svg')
           </div>
         </div>
       </div>
-      <div  
+      <div class="absolute right-50% transform items-center justify-center -bottom-10% lg:flex">
+        <div  
             class="dashed-circle"
             :class="['hidden lg:block']"
-            :style="{width: eW+'px', height:eW+'px',bottom: -(eW/eH)*43+'%'}">
+            :style="{width: eW+'px', height:eW+'px'}">
+      </div>
+      <div  
+            class="dashed-circle !border-primary"
+            :style="{width: eW*0.8+'px', height:eW*0.8+'px'}">
       </div>
       <div  
             class="dashed-circle"
-            :style="{width: eW*0.81+'px', height:eW*0.81+'px', bottom: -(eW/eH)*35+'%', left:'14%'}">
+            :style="{width: eW*0.6+'px', height:eW*0.6+'px'}">
       </div>
-      <div  
-            class="dashed-circle"
-            :style="{width: eW*0.7+'px', height:eW*0.7+'px', bottom: -(eW/eH)*33+'%', left:'19.5%'}">
       </div>
     </div>
   </div>
@@ -106,12 +108,10 @@ const Vector = imgUrl('home/section3/Vector.svg')
 }
 
 .dashed-circle {
-  width: 100px; /* 圓形的直徑 */
-  height: 100px; /* 圓形的直徑 */
+  @apply w-100px h-100px;
   border: 4px dashed #DDDDDD; /* 設置邊框為黑色虛線 */
   border-radius: 50%; /* 使邊框呈現圓形 */
   position: absolute;
-  bottom:0px;
   animation: rotateAnimation 150s linear infinite; /* 應用旋轉動畫，每次動畫持續 50 秒，無限次重復 */
   margin: 20px; /* 為了更好的展示效果，添加一些外邊距 */
   z-index: 1;
