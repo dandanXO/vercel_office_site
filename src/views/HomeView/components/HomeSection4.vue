@@ -14,7 +14,7 @@ const Vector = imgUrl('home/section3/Vector.svg')
     <div class="relative mx-auto px-8 py-5 lg:px-30">
       <div class="relative z-1 mb-10 flex flex-col items-center justify-center text-center">
         <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />
-        <h1 class="mb-2 text-4xl font-bold">我們的產品</h1>
+        <h1 class="mb-5 text-4xl font-bold">我們的產品</h1>
         <p class="mb-3 text-neutral-06">
           專注遊戲、Web 3、ESG 三大新興產業賽道
         </p>
@@ -22,7 +22,7 @@ const Vector = imgUrl('home/section3/Vector.svg')
       <!-- Cards 1 2 -->
       <div class="relative z-1 grid grid-cols-1 lg:grid-cols-5">
         <!-- Card 1 -->
-        <div class="col-span-2 mb-10 flex flex-col border border-neutral-04 rounded-2xl bg-primary-bg p-6 text-center lg:mb-0 lg:mr-10 hover:bg-primary">
+        <div class="col-span-2 mb-10 flex flex-col border border-neutral-04 rounded-2xl bg-primary-bg p-15 text-center lg:mb-0 lg:mr-10 hover:bg-primary">
           <div class="mb-4">
             <!-- Replace this div with actual icon -->
             <div class="mb-3 flex justify-center rounded-full text-white lg:justify-start">
@@ -42,7 +42,7 @@ const Vector = imgUrl('home/section3/Vector.svg')
         </div>
 
         <!-- Card 2 -->
-        <div class="col-span-3 flex flex-col border border-neutral-04 rounded-2xl bg-primary-bg p-6 text-center hover:bg-primary">
+        <div class="col-span-3 flex flex-col border border-neutral-04 rounded-2xl bg-primary-bg p-15 text-center hover:bg-primary">
           <div class="mb-4">
             <!-- Replace this div with actual icon -->
             <div class="mb-3 flex justify-center rounded-full text-white lg:justify-start">
@@ -65,7 +65,7 @@ const Vector = imgUrl('home/section3/Vector.svg')
       <div class="relative z-1 grid grid-cols-1 mt-10 lg:grid-cols-5">
 
         <!-- Card 3 -->
-        <div class="col-span-2 col-span-3 mb-10 flex flex-col border border-neutral-04 rounded-2xl bg-primary-bg p-6 text-center lg:mb-0 lg:mr-10 hover:bg-primary">
+        <div class="col-span-2 col-span-3 mb-10 flex flex-col border border-neutral-04 rounded-2xl bg-primary-bg p-15 text-center lg:mb-0 lg:mr-10 hover:bg-primary">
           <div class="mb-4">
             <!-- Replace this div with actual icon -->
             <div class="mb-3 flex justify-center rounded-full text-white lg:justify-start">
@@ -85,7 +85,7 @@ const Vector = imgUrl('home/section3/Vector.svg')
         </div>
 
         <!-- Card 4 -->
-        <div class="col-span-2 flex flex-col border border-neutral-04 rounded-2xl bg-primary-bg p-6 text-center hover:bg-primary">
+        <div class="col-span-2 flex flex-col border border-neutral-04 rounded-2xl bg-primary-bg p-15 text-center hover:bg-primary">
           <div class="mb-4">
             <!-- Replace this div with actual icon -->
             <div class="mb-3 flex justify-center rounded-full text-white lg:justify-start">

@@ -52,7 +52,7 @@ const Vector = imgUrl('home/section3/Vector.svg')
       <!-- Title and Description -->
       <div class="mb-10 flex flex-col items-center justify-center text-center">
         <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />
-        <h1 class="mb-2 text-4xl font-bold">我們的價值觀</h1>
+        <h1 class="mb-5 text-4xl font-bold">我們的價值觀</h1>
         <p class="mb-3 text-neutral-06">
           新數字致力於為客戶定義全新的企業數字 DNA，為客戶在原有的賽道創造新藍海
         </p>
@@ -82,15 +82,15 @@ const Vector = imgUrl('home/section3/Vector.svg')
         <div  
             class="dashed-circle"
             :class="['hidden lg:block']"
-            :style="{width: eW+'px', height:eW+'px'}">
+            :style="{width: 566+'px', height:566+'px'}">
       </div>
       <div  
             class="dashed-circle !border-primary"
-            :style="{width: eW*0.8+'px', height:eW*0.8+'px'}">
+            :style="{width: 831+'px', height: 831+'px'}">
       </div>
       <div  
             class="dashed-circle"
-            :style="{width: eW*0.6+'px', height:eW*0.6+'px'}">
+            :style="{width: 1089+'px', height: 1089+'px'}">
       </div>
       </div>
     </div>
@@ -109,7 +109,7 @@ const Vector = imgUrl('home/section3/Vector.svg')
 
 .dashed-circle {
   @apply w-100px h-100px;
-  border: 4px dashed #DDDDDD; /* 設置邊框為黑色虛線 */
+  border: 2px dashed #DDDDDD; /* 設置邊框為黑色虛線 */
   border-radius: 50%; /* 使邊框呈現圓形 */
   position: absolute;
   animation: rotateAnimation 150s linear infinite; /* 應用旋轉動畫，每次動畫持續 50 秒，無限次重復 */

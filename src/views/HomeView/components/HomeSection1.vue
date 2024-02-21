@@ -110,13 +110,13 @@ onMounted(() => {
         <div class="placeholder" :style="{ width: 603 + 'px', height: 603 + 'px' }"></div>
         <div
           class="dashed-circle-bottom !border-primary"
-          :style="{ width: 603 + 'px', height: 603 + 'px' }"
+          :style="{ width: 604 + 'px', height: 604 + 'px' }"
         ></div>
         <div
           class="dashed-circle-bottom !border-neutral-04"
           :style="{
-            width: 421 + 'px',
-            height: 421 + 'px',
+            width: 404 + 'px',
+            height: 404 + 'px',
           }"
         ></div>
       </div>

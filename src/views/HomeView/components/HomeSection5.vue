@@ -52,7 +52,7 @@ const toggle = (index: number) => {
           :class="[{'rounded-b-3':activeIndex !== index }]"
           @click="toggle(index)"
         >
-          <span>{{ item.question }}</span>
+          <span class="font-black">{{ item.question }}</span>
           <span class="arrow-button min-w-[30px] lg:ml-6">
             <i
               class="arrow"
