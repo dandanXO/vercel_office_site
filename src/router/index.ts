@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import JoinUsView from '../views/JoinUsView.vue'
 import DefaultLayoutVue from '@/layouts/DefaultLayout.vue'
 
 const router = createRouter({
@@ -10,17 +11,17 @@ const router = createRouter({
       component: DefaultLayoutVue,
       children: [
         {
-          path: '',
-          name: 'home',
+          path: '/',
+          name: 'Home',
           component: HomeView,
+        },
+        {
+          path: 'joinus',
+          name: 'JoinUs',
+          component: JoinUsView,
         },
       ],
     },
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   component: () => import('../views/AboutView.vue'),
-    // },
   ],
 })
 

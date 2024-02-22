@@ -59,13 +59,14 @@ onMounted(() => {
           <span class="text-80px font-900 leading-94px tracking-[4%] font-raleway"
             >Your <IconVector2 class="inline h-48px w-43px"></IconVector2
           ></span>
-
-          <span class="relative text-80px text-primary-hover font-900 leading-94px tracking-[4%]">
-            {{ titleType.output }}
-            <span
-              class="after:absolute after:right-0 after:top-50% after:ml-20px after:h-72px after:transform after:border-r-7px after:border-neutral-07 after:rounded-4px after:content-empty after:-translate-y-1/2"
-            ></span>
-          </span>
+          <div>
+            <span class="relative text-80px text-primary-hover font-900 leading-94px tracking-[4%]">
+              {{ titleType.output }}
+              <span
+                class="after:absolute after:right-0 after:top-50% after:ml-20px after:h-72px after:transform after:border-r-7px after:border-neutral-07 after:rounded-4px after:content-empty after:-translate-y-1/2"
+              ></span>
+            </span>
+          </div>
           <span
             class="px-10 text-80px text-neutral-07 font-900 leading-94px tracking-[4%] font-raleway"
           >
@@ -98,7 +99,7 @@ onMounted(() => {
     </div>
 
     <div class="mt-124px">
-      <Vue3Marquee :duration="15" gradient gradientLength="15%" direction="reverse">
+      <Vue3Marquee :duration="15" gradient gradientLength="15%" :gradient-color="[254, 255, 244]" direction="reverse" :loop="0">
         <img v-for="(item, index) in marqueeList" :key="index" :src="item" class="mx-40px" />
       </Vue3Marquee>
     </div>
