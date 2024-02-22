@@ -48,7 +48,7 @@ watch(
 
 <template>
   <div
-    class="flex flex-row items-center py-40px xl:justify-between xl:px-30 xl:py-60px"
+    class="flex flex-col-reverse items-center py-40px xl:flex-row xl:justify-between xl:px-30 xl:py-60px"
   >
     <div>
       <img :src="img1" class="h-408px rounded-20px object-cover" />

@@ -60,17 +60,18 @@ onMounted(() => {
             >Your <IconVector2 class="inline h-48px w-43px"></IconVector2
           ></span>
             
-          <span class="relative text-80px text-primary-hover font-900 leading-94px tracking-[4%]">
+          <span class="relative mx-4 text-80px text-primary-hover font-900 leading-94px tracking-[4%]">
             {{ titleType.output }}
-            <span
-              class="after:absolute after:right-0 after:top-50% after:ml-20px after:h-72px after:transform after:border-r-7px after:border-neutral-07 after:rounded-4px after:content-empty after:-translate-y-1/2"
-            ></span>
+            
           </span>
+          <span
+              class="ml-0 mr-8px border border-r-4px border-t-32px border-neutral-07 rounded-8px"
+            ></span>
         </div>
         <div class="heading-3">探索新數位，重新定義未來</div>
       </div>
       <div class="mb-64px w-full text-center" v-else>
-        <div class="text-40px font-900 leading-46px tracking-[4%] font-raleway">New Digit</div>
+        <div class="text-40px font-900 leading-46px tracking-[4%] font-raleway">New Digit?</div>
         <div class="my-4 text-40px font-900 leading-46px tracking-[4%] font-raleway">
           Defines <IconVector1 class="inline h-40px w-40px"></IconVector1> Your
         </div>
