@@ -48,7 +48,7 @@ const Vector = imgUrl('home/section3/Vector.svg')
 <template>
   <div class="overflow-hidden bg-primary-bg text-gray-900">
     
-    <div class="relative mx-auto px-6 py-10 lg:px-20">
+    <div class="relative mx-auto px-6 py-10 lg:px-30">
       <!-- Title and Description -->
       <div class="mb-10 flex flex-col items-center justify-center text-center">
         <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />

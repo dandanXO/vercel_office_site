@@ -13,10 +13,10 @@ const appStore = useAppStore()
 </script>
 
 <template>
-  <header class="h-88px flex items-center container">
-    <IconLogoWhite class="h-64px w-64px" />
+  <header class="h-88px flex items-center container" :class="[{'bg-primary': appStore.drawerOpen}]">
+    <IconLogoWhite class="h-64px w-64px" v-show="!appStore.drawerOpen"/>
     <template v-if="breakpoints.xl.value">
-      <div class="flex flex-1 items-center justify-center">
+      <div class="flex flex-1 justify-center">
         <router-link
           v-for="item in mainNav"
           :key="item.name"
@@ -25,15 +25,24 @@ const appStore = useAppStore()
           >{{ item.name }}</router-link
         >
       </div>
-      <div class="hover:cursor-pointer">
+      <div class="flex flex-row items-center hover:cursor-pointer">
+        <div class="inlin border-2 border-black rounded-5 px-4 py-3.2">
+        <router-link
+          :to="'/contact'"
+          class="text-base text-black font-500 decoration-none"
+          >聯絡我們</router-link
+        >
+      </div>
+      <div class="inlin ml-8">
         <IconEarth class="text-black"></IconEarth>
+      </div>
       </div>
     </template>
     <template v-else>
       <div class="flex-1"></div>
       <button
         type="button"
-        class="relative inline-flex flex-shrink-0 items-center justify-center rounded-md bg-white/0 hover:text-black/80"
+        class="relative inline-flex flex-shrink-0 items-center justify-center rounded-md bg-white/0 p-1 hover:rounded-[100%] hover:bg-primary"
         @click="appStore.drawerOpen = !appStore.drawerOpen"
       >
         <IconClose class="h-32px w-32px" v-if="appStore.drawerOpen" />
@@ -54,21 +63,21 @@ const appStore = useAppStore()
       <div class="flex flex-col gap-32px xl:flex-row xl:gap-80px">
         <div class="flex flex-col gap-18px text-neutral-07">
           <div class="text-16px font-700">關於我們</div>
-          <div class="text-14px font-400">部落格</div>
-          <div class="text-14px font-400">加入我們</div>
+          <div class="text-14px text-neutral-06 font-400">部落格</div>
+          <div class="text-14px text-neutral-06 font-400">加入我們</div>
         </div>
         <div class="flex flex-col gap-18px text-neutral-07">
           <div class="text-16px font-700">產品</div>
-          <div class="text-14px font-400">特色</div>
-          <div class="text-14px font-400">使用者條款</div>
-          <div class="text-14px font-400">隱私權政策</div>
+          <div class="text-14px text-neutral-06 font-400">特色</div>
+          <div class="text-14px text-neutral-06 font-400">使用者條款</div>
+          <div class="text-14px text-neutral-06 font-400">隱私權政策</div>
         </div>
       </div>
-      <!-- <div class="mt-64px w-full flex flex-col gap-18px xl:mt-0 xl:w-auto">
+      <!-- <div class="flex flex-col w-full mt-64px gap-18px xl:mt-0 xl:w-auto">
         <div class="text-16px text-neutral-07 font-700">訂閱電子報</div>
         <div class="text-14px text-neutral-06 font-400">第一時間掌握我們的消息！</div>
         <form
-          class="flex justify-between border-1 border-neutral-04 rounded-20px border-solid bg-neutral-01 px-20px py-8px xl:w-360px"
+          class="flex justify-between border-solid border-1 border-neutral-04 rounded-20px bg-neutral-01 px-20px py-8px xl:w-360px"
         >
           <label for="email-address" class="sr-only">你的信箱</label>
           <input
@@ -76,12 +85,12 @@ const appStore = useAppStore()
             name="email"
             type="email"
             autocomplete="email"
-            class="min-w-0 flex-1 border-0 rounded-20px placeholder:text-gray-400 sm:leading-6 focus:outline-0"
+            class="flex-1 min-w-0 border-0 rounded-20px placeholder:text-gray-400 sm:leading-6 focus:outline-0"
             placeholder="你的信箱"
           />
           <button
             type="submit"
-            class="rounded-20px bg-primary p-16px text-sm text-black font-500 hover:bg-primary-hover"
+            class="text-sm text-black rounded-20px bg-primary p-16px font-500 hover:bg-primary-hover"
           >
             <div>確認訂閱</div>
           </button>

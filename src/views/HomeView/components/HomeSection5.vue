@@ -38,7 +38,7 @@ const toggle = (index: number) => {
 </script>
 <template>
   <div
-    class="fade-in-bottom flex flex-col items-center justify-center bg-primary-bg p-4 pt-30"
+    class="fade-in-bottom flex flex-col items-center justify-center bg-primary-bg pt-30"
   >
     <div class="mb-10 text-4xl font-black">FAQ</div>
     <div class="w-full px-8 pb-8 transition-max-height lg:px-30">

@@ -34,8 +34,8 @@ const appStore = useAppStore()
               leave-from="translate-x-0"
               leave-to="translate-x-full"
             >
-              <DialogPanel class="pointer-events-auto relative w-full">
-                <div class="h-full w-full overflow-y-auto bg-neutral-03 px-16px py-40px">
+              <DialogPanel class="pointer-events-auto relative w-full bg-primary">
+                <div class="h-full w-full overflow-y-auto bg-neutral-03 bg-primary px-16px py-40px">
                   <div class="h-full flex flex-col justify-between gap-16px">
                     <RouterLink v-for="(item, index) in mainNav" :key="index" to="#">
                       <div

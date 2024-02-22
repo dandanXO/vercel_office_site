@@ -48,9 +48,12 @@ watch(
 
 <template>
   <div
-    class="flex flex-col items-center py-40px container xl-flex-row-reverse xl:gap-117.5px xl:py-60px"
+    class="flex flex-row items-center py-40px xl:justify-between xl:px-30 xl:py-60px"
   >
-    <div class="flex flex-1 flex-col">
+    <div>
+      <img :src="img1" class="h-408px rounded-20px object-cover" />
+    </div>
+    <div class="flex flex-col pr-[10%]">
       <div
         class="flex flex-col items-center justify-center gap-40px py-76px xl:items-start xl:py-60px"
       >
@@ -71,7 +74,6 @@ watch(
         </div>
       </div>
     </div>
-    <img :src="img1" class="h-408px rounded-20px object-cover" />
   </div>
 </template>
 

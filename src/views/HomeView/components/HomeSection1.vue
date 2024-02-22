@@ -55,22 +55,16 @@ onMounted(() => {
         <div class="text-80px font-900 leading-94px tracking-[4%] font-raleway">
           New Digit Defines <IconVector1 class="inline h-48px w-48px"></IconVector1>
         </div>
-        <div class="mb-16px w-full text-center">
+        <div class="mb-16px ml-[25%] w-full text-left">
           <span class="text-80px font-900 leading-94px tracking-[4%] font-raleway"
             >Your <IconVector2 class="inline h-48px w-43px"></IconVector2
           ></span>
-          <div>
-            <span class="relative text-80px text-primary-hover font-900 leading-94px tracking-[4%]">
-              {{ titleType.output }}
-              <span
-                class="after:absolute after:right-0 after:top-50% after:ml-20px after:h-72px after:transform after:border-r-7px after:border-neutral-07 after:rounded-4px after:content-empty after:-translate-y-1/2"
-              ></span>
-            </span>
-          </div>
-          <span
-            class="px-10 text-80px text-neutral-07 font-900 leading-94px tracking-[4%] font-raleway"
-          >
-            .
+            
+          <span class="relative text-80px text-primary-hover font-900 leading-94px tracking-[4%]">
+            {{ titleType.output }}
+            <span
+              class="after:absolute after:right-0 after:top-50% after:ml-20px after:h-72px after:transform after:border-r-7px after:border-neutral-07 after:rounded-4px after:content-empty after:-translate-y-1/2"
+            ></span>
           </span>
         </div>
         <div class="heading-3">探索新數位，重新定義未來</div>
@@ -84,7 +78,6 @@ onMounted(() => {
           <IconVector2 class="mr-8px inline h-40px w-40px"></IconVector2>
           <span class="text-primary-hover">{{ titleType.output }}</span>
           <span class="ml-12px mr-8px border border-r-4px border-neutral-07 rounded-4px"></span>
-          <span class="px-10px">.</span>
         </div>
         <div class="mt-24px heading-3">探索新數位，重新定義未來</div>
       </div>
