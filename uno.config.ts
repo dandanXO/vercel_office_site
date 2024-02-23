@@ -64,6 +64,7 @@ export default defineConfig({
       'neutral-05': '#A0A0A0',
       'neutral-06': '#6B6B6B',
       'neutral-07': '#141414',
+      'blue-05': '#3393FF'
     },
   },
 })
