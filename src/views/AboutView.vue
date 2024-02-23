@@ -39,12 +39,22 @@ const img1 = imgUrl('home/2-1.png')
     </div>
 
     <div class="relative z-1 mb-10 mt-25 flex flex-col items-center justify-center text-center">
-        <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />
-        <h1 class="mb-5 text-4xl font-bold">新數字三大核心價值 3C</h1>
-        <p class="mb-3 text-neutral-06">
-          專注 Web 3、遊戲產業、品牌增長、ESG 四大新興產業賽道
-        </p>
+      <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />
+      <h1 class="mb-5 text-4xl font-bold">新數字三大核心價值 3C</h1>
+      <p class="mb-3 text-neutral-06">
+        專注 Web 3、遊戲產業、品牌增長、ESG 四大新興產業賽道
+      </p>
+      <div class="mt-15 w-full">
+        <div class="w-full flex flex-row">
+          <div class="">
+            左邊
+          </div>
+          <div>
+            右邊
+          </div>
+        </div>
       </div>
+    </div>
 
   
   </div>
