@@ -92,7 +92,7 @@ onMounted(() => {
       </div>
     </div>
 
-    <div class="mt-124px">
+    <div class="ml-30 mt-124px w-full lg:w-[63%]">
       <Vue3Marquee :duration="15" gradient gradientLength="15%" :gradient-color="[254, 255, 244]" direction="reverse" :loop="0">
         <img v-for="(item, index) in marqueeList" :key="index" :src="item" class="mx-40px" />
       </Vue3Marquee>

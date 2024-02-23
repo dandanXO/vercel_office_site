@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import JoinUsView from '../views/JoinUsView.vue'
+import AboutView from '../views/AboutView.vue'
+import ServiceView from '../views/ServiceView.vue'
 import DefaultLayoutVue from '@/layouts/DefaultLayout.vue'
 
 const router = createRouter({
@@ -19,6 +21,16 @@ const router = createRouter({
           path: 'joinus',
           name: 'JoinUs',
           component: JoinUsView,
+        },
+        {
+          path: 'service',
+          name: 'service',
+          component: ServiceView,
+        },
+        {
+          path: 'about',
+          name: 'About',
+          component: AboutView,
         },
       ],
     },
