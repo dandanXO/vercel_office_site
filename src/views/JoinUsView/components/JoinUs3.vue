@@ -64,7 +64,7 @@ const Vector = imgUrl('home/section3/Vector.svg')
 <!--        <caption class="caption-top">-->
 <!--          Table 3.1: Professional wrestlers and their signature moves.-->
 <!--        </caption>-->
-        <table class="table-fixed border-collapse border border-slate-400 w-full">
+        <table class="w-full border-collapse table-fixed border border-slate-400">
           <thead>
           <tr>
             <th>職位名稱</th>
