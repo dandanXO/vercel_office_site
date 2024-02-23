@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { imgUrl } from '@/assets'
 
 import HomeSection1 from './HomeView/components/HomeSection1.vue'
 import HomeSection2 from './HomeView/components/HomeSection2.vue'
