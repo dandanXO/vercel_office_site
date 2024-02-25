@@ -7,13 +7,37 @@
   imgUrl('home/section4/icon3.png'),
   imgUrl('home/section4/icon4.png')
 ]
+import IconVector2 from '@icons/nd/vector2.svg'
+const img1 = imgUrl('home/2-1.png')
 const Vector = imgUrl('home/section3/Vector.svg')
-
+const bk1 = imgUrl('joinUs/joinus1/block-1.png')
 const sq = imgUrl('service/bg-sq.png')
 </script>
 
 <template>
   <div>
+    <div class="mb-20 mt-11 flex flex-col text-left lg:px-30">
+      <img :src="bk1" class="absolute left-10 top-30 z-0 h-[110px] w-[110px]" />
+      <h1 class="z-10 mb-5 text-6xl font-bold">Service</h1>
+      <p class="z-10 mb-12 text-3xl text-neutral-06">
+        服務項目
+      </p>
+    </div>
+    <div
+      class="flex flex-col-reverse lg:flex-row lg:px-30"
+    >
+      <div class="w-[50%] flex flex-col justify-around">
+        <IconVector2 class="inline h-48px w-43px"></IconVector2>
+        <div class="text-[28px] text-blue-05 font-extrabold">WHO WE ARE?</div>
+        <div class="text-[32px] font-bold font-sans">為全球客戶提供品牌增長、Web3 整合、遊戲開發等解決方案，定義全新數位體驗</div>
+        <div class="text-neutral-06 font-[20px]">
+          新數字為一跨國集團：台灣總部負責集團的研發中心，專注於 Web3 代客開發/整合、交易所 SaaS 平台開發、遊戲代客開發/代理、品牌流量增長，並用 ESG 理念貫徹台灣政府主力推動的永續行動。
+        </div>
+      </div>
+      <div class="w-[50%] flex justify-end">
+        <img :src="img1" class="ml-20 rounded-20px object-cover !h-500px !w-400px" />
+      </div>
+    </div>
     <div class="relative mx-auto px-8 pb-25 pt-5 lg:px-30">
       <div class="relative z-1 mb-10 flex flex-col items-center justify-center text-center">
         <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />
@@ -118,11 +142,11 @@ const sq = imgUrl('service/bg-sq.png')
           期待與您洽談專案，協助您實現數位目標與取得成功
         </p>
       </div>
-      <div class="m-auto h-[56px] w-[140px] border-2 rounded-5 bg-black px-4 py-3.2">
+      <div class="m-auto h-[56px] w-[140px] border-2 rounded-5 bg-black px-4 py-3.2 text-center">
         <router-link
           :to="'/contact'"
-          class="text-center text-base text-white font-500 decoration-none"
-          >聯絡我們<IconArrowRight class="inline"></IconArrowRight>
+          class="mx-auto text-center text-base text-white font-500 decoration-none"
+          >聯絡我們<IconArrowRight class="ml-1 inline"></IconArrowRight>
           </router-link
         >
       </div>

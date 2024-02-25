@@ -7,6 +7,8 @@ import DefaultLayoutDrawer from './DefaultLayoutDrawer.vue'
 import { breakpointsTailwind } from '@vueuse/core'
 import { useAppStore } from '@/stores/app'
 import { mainNav } from './const'
+import { imgUrl } from '@/assets'
+const logo = imgUrl('Logo.png')
 
 const breakpoints = useBreakpoints(breakpointsTailwind)
 const appStore = useAppStore()
@@ -59,18 +61,17 @@ const appStore = useAppStore()
     <div
       class="flex flex-col flex-wrap items-center justify-between gap-32px py-40px container xl:flex-row xl:py-120px"
     >
-      <IconLogoWhite class="h-64px w-64px" />
+      <!-- <IconLogoWhite class="h-64px w-64px" /> -->
+      <img :src="logo" class="" />
       <div class="flex flex-col gap-32px xl:flex-row xl:gap-80px">
-        <div class="flex flex-col gap-18px text-neutral-07">
-          <div class="text-16px font-700">關於我們</div>
-          <div class="text-14px text-neutral-06 font-400">部落格</div>
-          <div class="text-14px text-neutral-06 font-400">加入我們</div>
-        </div>
-        <div class="flex flex-col gap-18px text-neutral-07">
-          <div class="text-16px font-700">產品</div>
-          <div class="text-14px text-neutral-06 font-400">特色</div>
-          <div class="text-14px text-neutral-06 font-400">使用者條款</div>
-          <div class="text-14px text-neutral-06 font-400">隱私權政策</div>
+        <div class="flex flex-row gap-18px text-neutral-07">
+          <div class="text-16px text-neutral-06 font-400">關於新數字</div>
+          <div class="border-r border-neutral-06"></div>
+          <div class="text-16px text-neutral-06 font-400">服務項目</div>
+          <div class="border-r border-neutral-06"></div>
+          <div class="text-16px text-neutral-06 font-400">加入我們</div>
+          <div class="border-r border-neutral-06"></div>
+          <div class="text-16px text-neutral-06 font-400">聯絡我們</div>
         </div>
       </div>
       <!-- <div class="flex flex-col w-full mt-64px gap-18px xl:mt-0 xl:w-auto">

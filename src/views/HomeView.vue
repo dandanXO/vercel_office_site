@@ -21,7 +21,7 @@ const section2Visible = computed(() => section2Position.top.value < windowsSize.
     <!-- Section 3 -->
     <HomeSection3 />
     <!-- Section 4 -->
-    <HomeSection4 class="pt-30" />
+    <HomeSection4 class="pt-25" />
     <!-- Section 5 -->
     <HomeSection5 class="" />
     <!-- Section 6 -->

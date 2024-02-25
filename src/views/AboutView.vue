@@ -22,7 +22,7 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
         </p>
       </div>
     <div
-      class="flex flex-col-reverse lg:flex-row lg:px-30"
+      class="flex flex-col-reverse lg:flex-row"
      >
       <div class="w-[405px]">
         <img :src="img1" class="rounded-20px object-cover !h-605px !w-405px" />
