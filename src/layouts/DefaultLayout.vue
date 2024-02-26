@@ -15,9 +15,9 @@ const appStore = useAppStore()
 </script>
 
 <template>
-  <header class="h-88px flex items-center container" :class="[{'bg-primary': appStore.drawerOpen}]">
+  <header class="h-88px w-full flex items-center container" :class="[{'bg-primary': appStore.drawerOpen}]">
     <IconLogoWhite class="h-64px w-64px" v-show="!appStore.drawerOpen"/>
-    <template v-if="breakpoints.xl.value">
+    <template v-if="breakpoints.lg.value">
       <div class="flex flex-1 justify-center">
         <router-link
           v-for="item in mainNav"

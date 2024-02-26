@@ -28,10 +28,10 @@ const sq = imgUrl('service/bg-sq.png')
     >
       <div class="w-[50%] flex flex-col justify-around">
         <IconVector2 class="inline h-48px w-43px"></IconVector2>
-        <div class="text-[28px] text-blue-05 font-extrabold">WHO WE ARE?</div>
-        <div class="text-[32px] font-bold font-sans">為全球客戶提供品牌增長、Web3 整合、遊戲開發等解決方案，定義全新數位體驗</div>
+        <div class="text-[28px] text-blue-05 font-extrabold">WHAT WE DO</div>
+        <div class="text-[32px] font-bold font-sans">致力於為客戶定義全新的企業數字 DNA，為客戶在原有的賽道創造新藍海</div>
         <div class="text-neutral-06 font-[20px]">
-          新數字為一跨國集團：台灣總部負責集團的研發中心，專注於 Web3 代客開發/整合、交易所 SaaS 平台開發、遊戲代客開發/代理、品牌流量增長，並用 ESG 理念貫徹台灣政府主力推動的永續行動。
+          我們的使命是為客戶打造一個全新的數位世界。我們不僅關注數字，更關注每個客戶獨特的數位元素，因為我們相信，每個人的未來都可以被重新定義。
         </div>
       </div>
       <div class="w-[50%] flex justify-end">
