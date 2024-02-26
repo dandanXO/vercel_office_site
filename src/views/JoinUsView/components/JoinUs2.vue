@@ -76,7 +76,7 @@ const bk1 = imgUrl('joinUs/joinus2/block-1.png')
               <!-- Replace with an SVG or icon font class -->
               <img :src="item.icon" class="h-[96px] w-[96px]" />
             </div>
-            <p class="mb-6 flex items-center justify-center text-3xl">{{ item.title }}</p>
+            <p class="mb-6 flex items-center justify-center text-3xl font-bold">{{ item.title }}</p>
             <p class="mb-6 flex items-center justify-center text-center text-xl text-neutral-05">{{ item.contentText }}</p>
             </div>
           </div>

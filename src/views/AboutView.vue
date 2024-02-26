@@ -75,10 +75,10 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
           </div>
           <div class="z-2 mr-5 w-1/2 bg-primary-bg">
             <div class="border border-neutral-07 rounded-40px bg-primary-bg px-15 py-10 text-left">
-              <div class="mb-4 text-[24px] text-blue-05">
+              <div class="mb-4 text-[24px] text-blue-05 font-bold">
                 Creation
               </div>
-              <div class="mb-4 text-[32px] text-neutral-07">
+              <div class="mb-4 text-[32px] text-neutral-07 font-bold">
                 前沿創新
               </div>
               <div class="text-[20px] text-neutral-06">
@@ -88,10 +88,10 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
           </div>
           <div class="mr-5 w-1/2">
             <div class="mb-10 border border-neutral-07 rounded-40px bg-primary-bg px-15 py-10 text-left">
-              <div class="mb-4 text-[24px] text-blue-05">
+              <div class="mb-4 text-[24px] text-blue-05 font-bold">
                 Customization
               </div>
-              <div class="mb-4 text-[32px] text-neutral-07">
+              <div class="mb-4 text-[32px] text-neutral-07 font-bold">
                 個性化數位體驗
               </div>
               <div class="text-[20px] text-neutral-06">
@@ -99,10 +99,10 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
               </div>
             </div>
             <div class="border border-neutral-07 rounded-40px bg-primary-bg px-15 py-10 text-left">
-              <div class="mb-4 text-[24px] text-blue-05">
+              <div class="mb-4 text-[24px] text-blue-05 font-bold">
                 Collaboration
               </div>
-              <div class="mb-4 text-[32px] text-neutral-07">
+              <div class="mb-4 text-[32px] text-neutral-07 font-bold">
                 共同成長
               </div>
               <div class="text-[20px] text-neutral-06">
@@ -119,7 +119,7 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
     <img :src="footer2" class="absolute bottom-6 z-0 h-[340px] w-[340px] -right-30" />
     <div class="relative z-2 flex">
       <div class="mr-5 mt-22 max-h-[288px] w-1/2 border border-neutral-07 rounded-40px bg-primary-bg px-15 py-10 text-left">
-        <div class="font-blob mb-4 text-[32px] text-neutral-07">
+        <div class="mb-4 text-[32px] text-neutral-07 font-extrabold">
           Let's talk !
         </div>
         <div class="text-[20px] text-neutral-06">
@@ -135,7 +135,7 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
         </div>
       </div>
       <div class="ml-5 mt-52 max-h-[288px] w-1/2 border border-neutral-07 rounded-40px bg-primary-bg px-15 py-10 text-left">
-        <div class="font-blob mb-4 text-[32px] text-neutral-07">
+        <div class="mb-4 text-[32px] text-neutral-07 font-extrabold">
           Join Us !
         </div>
         <div class="text-[20px] text-neutral-06">
