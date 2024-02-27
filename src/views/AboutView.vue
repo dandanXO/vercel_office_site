@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import IconVector2 from '@icons/nd/vector2.svg'
+import IconArrowRight from '@icons/nd/arrow-right.svg'
 import { imgUrl } from '@/assets'
 const Vector = imgUrl('home/section3/Vector.svg')
 const img1 = imgUrl('home/2-1.png')

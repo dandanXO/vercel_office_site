@@ -8,7 +8,7 @@
   imgUrl('home/section4/icon4.png')
 ]
 import IconVector2 from '@icons/nd/vector2.svg'
-const img1 = imgUrl('home/2-1.png')
+const img1 = imgUrl('home/2-2.png')
 const Vector = imgUrl('home/section3/Vector.svg')
 const bk1 = imgUrl('joinUs/joinus1/block-1.png')
 const sq = imgUrl('service/bg-sq.png')
@@ -16,7 +16,7 @@ const sq = imgUrl('service/bg-sq.png')
 
 <template>
   <div>
-    <div class="mb-20 mt-11 flex flex-col text-left lg:px-30">
+    <div class="mb-15 mt-11 flex flex-col text-left lg:px-30">
       <img :src="bk1" class="absolute left-10 top-30 z-0 h-[110px] w-[110px]" />
       <h1 class="z-10 mb-5 text-6xl font-bold">Service</h1>
       <p class="z-10 mb-12 text-3xl text-neutral-06">
@@ -35,10 +35,10 @@ const sq = imgUrl('service/bg-sq.png')
         </div>
       </div>
       <div class="w-[50%] flex justify-end">
-        <img :src="img1" class="ml-20 rounded-20px object-cover !h-500px !w-400px" />
+        <img :src="img1" class="ml-20 rounded-20px object-cover !h-400px !w-400px" />
       </div>
     </div>
-    <div class="relative mx-auto px-8 pb-25 pt-5 lg:px-30">
+    <div class="relative mx-auto px-8 pb-15 pt-15 lg:px-30">
       <div class="relative z-1 mb-10 flex flex-col items-center justify-center text-center">
         <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />
         <h1 class="mb-5 text-4xl font-bold">服務項目</h1>

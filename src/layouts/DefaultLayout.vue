@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useRouter } from 'vue-router'
 import IconEarth from '@icons/nd/earth.svg'
 import IconMenu from '@icons/nd/menu.svg'
 import IconClose from '@icons/nd/close.svg'
@@ -9,14 +10,14 @@ import { useAppStore } from '@/stores/app'
 import { mainNav } from './const'
 import { imgUrl } from '@/assets'
 const logo = imgUrl('Logo.png')
-
+const router = useRouter()
 const breakpoints = useBreakpoints(breakpointsTailwind)
 const appStore = useAppStore()
 </script>
 
 <template>
-  <header class="h-88px w-full flex items-center container" :class="[{'bg-primary': appStore.drawerOpen}]">
-    <IconLogoWhite class="h-64px w-64px" v-show="!appStore.drawerOpen"/>
+  <header class="h-88px w-full flex items-center lg:px-30" :class="[{'bg-primary': appStore.drawerOpen}]">
+    <IconLogoWhite @click="router.push('/')" class="h-64px w-64px cursor-pointer" v-show="!appStore.drawerOpen"/>
     <template v-if="breakpoints.lg.value">
       <div class="flex flex-1 justify-center">
         <router-link
@@ -53,13 +54,13 @@ const appStore = useAppStore()
       <default-layout-drawer />
     </template>
   </header>
-  <main>
+  <main class="overflow-hidden">
     <router-view></router-view>
   </main>
 
-  <footer class="border-t-2px border-white border-solid">
+  <footer class="border-t-2px border-white border-solid lg:px-30">
     <div
-      class="flex flex-col flex-wrap items-center justify-between gap-32px py-40px container xl:flex-row xl:py-120px"
+      class="flex flex-col flex-wrap items-center justify-between gap-32px py-40px xl:flex-row xl:py-120px"
     >
       <!-- <IconLogoWhite class="h-64px w-64px" /> -->
       <img :src="logo" class="" />

@@ -51,7 +51,7 @@ watch(
     class="flex flex-col-reverse items-center py-40px xl:flex-row xl:justify-between xl:px-30 xl:py-60px"
   >
     <div>
-      <img :src="img1" class="h-408px rounded-20px object-cover" />
+      <img :src="img1" class="h-400px w-600px rounded-20px object-cover" />
     </div>
     <div class="flex flex-col pr-[10%]">
       <div
