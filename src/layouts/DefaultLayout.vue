@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
-import IconEarth from '@icons/nd/earth.svg'
+// import IconEarth from '@icons/nd/earth.svg'
 import IconMenu from '@icons/nd/menu.svg'
 import IconClose from '@icons/nd/close.svg'
 import IconLogoWhite from '@icons/nd/logo-white.svg'
@@ -29,16 +29,16 @@ const appStore = useAppStore()
         >
       </div>
       <div class="flex flex-row items-center hover:cursor-pointer">
-        <div class="inlin border-2 border-black rounded-5 px-4 py-3.2">
-        <router-link
-          :to="'/contact'"
-          class="text-base text-black font-500 decoration-none"
-          >聯絡我們</router-link
+        <div class="inlin border-2 border-black rounded-5 px-4 py-3.2 hover:border-gray-500">
+        <a
+          href="mailto:zoe@newdigit.io"
+          class="text-base text-black font-500 decoration-none hover:text-gray-500"
+          >聯絡我們</a
         >
       </div>
-      <div class="inlin ml-8">
+      <!-- <div class="inlin ml-8">
         <IconEarth class="text-black"></IconEarth>
-      </div>
+      </div> -->
       </div>
     </template>
     <template v-else>
@@ -65,14 +65,14 @@ const appStore = useAppStore()
       <!-- <IconLogoWhite class="h-64px w-64px" /> -->
       <img :src="logo" class="" />
       <div class="flex flex-col gap-32px xl:flex-row xl:gap-80px">
-        <div class="flex flex-row gap-18px text-neutral-07">
-          <div class="text-16px text-neutral-06 font-400">關於新數字</div>
+        <div class="flex flex-row gap-18px text-neutral-07 hover:cursor-pointer">
+          <div class="text-16px text-neutral-06 font-400" @click="router.push('/about')" >關於新數字</div>
           <div class="border-r border-neutral-06"></div>
-          <div class="text-16px text-neutral-06 font-400">服務項目</div>
+          <div class="text-16px text-neutral-06 font-400" @click="router.push('/service')" >服務項目</div>
           <div class="border-r border-neutral-06"></div>
-          <div class="text-16px text-neutral-06 font-400">加入我們</div>
+          <div class="text-16px text-neutral-06 font-400" @click="router.push('/joinus')">加入我們</div>
           <div class="border-r border-neutral-06"></div>
-          <div class="text-16px text-neutral-06 font-400">聯絡我們</div>
+          <a href="mailto:zoe@newdigit.io" class="text-16px text-neutral-06 font-400">聯絡我們</a>
         </div>
       </div>
       <!-- <div class="flex flex-col w-full mt-64px gap-18px xl:mt-0 xl:w-auto">

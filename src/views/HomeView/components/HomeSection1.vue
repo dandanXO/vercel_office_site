@@ -49,7 +49,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="relative overflow-hidden pb-63px pt-160px xl:pt-125px" ref="sectionRef">
+  <div class="relative overflow-hidden pb-63px pt-160px xl:pt-100px" ref="sectionRef">
     <div class="mt-60px flex flex-wrap container xl:mt-100px xl:justify-between">
       <div v-if="xl" class="mb-72px w-full text-center">
         <div class="text-80px font-900 leading-94px tracking-[4%] font-raleway">

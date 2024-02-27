@@ -131,27 +131,30 @@ const handleExpand = (index = 0) => {
             </td>
             <td class="w-1/12 px-2 py-2 text-left text-sm font-normal">{{item.type}}</td>
             <td class="w-12/12 flex px-6 py-6 text-left text-sm font-normal">
-              <!--展开的 code start-->
-              <div v-if="item.expand" class="h-12 text-ellipsis" style="width:560px;height:auto;text-overflow:ellipsis;">
-                <div v-for="(mytext, mkey) in item.contentText" :key="mkey">
-                  {{mytext}}
+                <!--展开的 code start-->
+                
+                  <div v-if="item.expand" class="h-12 text-ellipsis" style="width:560px;height:auto;text-overflow:ellipsis;">
+                    <div v-for="(mytext, mkey) in item.contentText" :key="mkey">
+                      {{mytext}}
+                    </div>
+                    <div class="mb-5 mt-15">
+                    <button class="m-5 ml-0 flex border rounded-full px-4 py-4 text-base" style="background-color: transparent;border:1px solid #141414">
+                      投遞履歷 <img :src="arrowRight" class="h-6 w-6" />
+                    </button>
+                    </div>
+                  </div>
+                
+                <!--展开的 code end-->
+                <!--合起来的 code start-->
+                
+                <div v-if="!item.expand" class="h-20" style="width:560px;display: -webkit-box;overflow: hidden;-webkit-box-orient: vertical;-webkit-line-clamp: 4;">
+  <!--                     {{item.contentText}}-->
+                  <div v-for="(mytext, mkey) in item.contentText" :key="mkey">
+                    {{mytext}}
+                  </div>
                 </div>
-                <div class="mb-5 mt-15">
-                <button class="m-5 ml-0 flex border rounded-full px-4 py-4 text-base" style="background-color: transparent;border:1px solid #141414">
-                  投遞履歷 <img :src="arrowRight" class="h-6 w-6" />
-                </button>
-                </div>
-              </div>
-
-              <!--展开的 code end-->
-              <!--合起来的 code start-->
-              <div v-if="!item.expand" class="h-20" style="width:560px;display: -webkit-box;overflow: hidden;-webkit-box-orient: vertical;-webkit-line-clamp: 4;">
-<!--                     {{item.contentText}}-->
-                <div v-for="(mytext, mkey) in item.contentText" :key="mkey">
-                  {{mytext}}
-                </div>
-              </div>
-              <!--合起来的 code end-->
+                
+                <!--合起来的 code end-->
               <div class="flex justify-center" style="width: calc(100% - 560px);">
                 <div class="mb-2 h-[60px] w-[60px] flex cursor-pointer items-center justify-center rounded-full p-6 text-white" style="background-color: #141414" @click="handleExpand(index as number)">
                   <img :src="Vector" class="h-[96px] w-[96px]" :class="item.expand?'translationCircle':'translationCircleBack'"/>
@@ -204,6 +207,22 @@ const handleExpand = (index = 0) => {
 .translationCircleBack {
   transform: rotate(0 deg);
   transition: all 0.5s ease;
+}
+
+.drawer {
+  width: 0;
+  overflow: hidden;
+  transition: width 0.5s ease;
+  background-color: #f0f0f0;
+  /* 其他樣式 */
+}
+
+.drawer-enter-active, .drawer-leave-active {
+  width: 250px; /* 展開時的寬度 */
+}
+
+.drawer-enter, .drawer-leave-to /* Vue 2.1.8 版本及以上 */ {
+  width: 0;
 }
 
 </style>
