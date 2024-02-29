@@ -57,6 +57,7 @@ export default defineConfig({
       primary: '#E4FF00',
       'primary-bg': '#FEFFF4',
       'primary-hover': '#CDE600',
+      'header-hover':'#ABC207',
       'primary-disable': '#F7FFB1',
       'neutral-01': '#FFFFFF',
       'neutral-03': '#F0F0F0',
@@ -65,6 +66,7 @@ export default defineConfig({
       'neutral-06': '#6B6B6B',
       'neutral-07': '#141414',
       'blue-05': '#3393FF'
+      
     },
   },
 })
