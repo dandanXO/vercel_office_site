@@ -22,7 +22,6 @@ watch(
   () => props.sectionVisible,
   (val) => {
     if (val) {
-      console.log('section2 is visible')
       goals.value.forEach((goal) => {
         // let c = goal.num
         let updateCounter = () => {

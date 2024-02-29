@@ -12,7 +12,6 @@ import { imgUrl } from '@/assets'
 const logo = imgUrl('Logo.png')
 const router = useRouter()
 const route = useRoute()
-console.log(router, route.path)
 const breakpoints = useBreakpoints(breakpointsTailwind)
 const appStore = useAppStore()
 </script>
@@ -26,13 +25,13 @@ const appStore = useAppStore()
           v-for="item in mainNav"
           :key="item.name"
           :to="item.to"
-          class="px-5 py-3 text-base text-black font-500 decoration-none transition duration-500 hover:text-header-hover"
+          class="px-5 py-3 text-base text-black font-500 decoration-none transition duration-300 hover:text-header-hover"
           :class="[{'text-header-hover': route.path === item.to}]"
           >{{ item.name }}</router-link
         >
       </div>
       <div class="flex flex-row items-center hover:cursor-pointer">
-        <div class="inlin border-2 border-black rounded-5 px-4 py-3.2 active:border-black hover:border-gray-500 active:bg-black active:text-white hover:text-gray-500">
+        <div class="inlin border-2 border-black rounded-5 px-4 py-3.2 transition duration-300 active:border-black hover:border-gray-500 active:bg-black active:text-white hover:text-gray-500">
         <a
           href="mailto:zoe@newdigit.io"
           class="text-base font-500 decoration-none"
@@ -69,13 +68,15 @@ const appStore = useAppStore()
       <img :src="logo" class="" />
       <div class="flex flex-col gap-32px xl:flex-row xl:gap-80px">
         <div class="flex flex-row gap-18px text-neutral-07 hover:cursor-pointer">
-          <div class="text-16px text-neutral-06 font-400 hover:text-header-hover" @click="router.push('/about')" >關於新數字</div>
+          <div class="text-16px text-neutral-06 font-400 transition duration-300 hover:text-header-hover" @click="router.push('/about')" >關於新數字</div>
           <div class="border-r border-neutral-06"></div>
-          <div class="text-16px text-neutral-06 font-400 hover:text-header-hover" @click="router.push('/service')" >服務項目</div>
+          <div class="text-16px text-neutral-06 font-400 transition duration-300 hover:text-header-hover" @click="router.push('/service')" >服務項目</div>
           <div class="border-r border-neutral-06"></div>
-          <div class="text-16px text-neutral-06 font-400 hover:text-header-hover" @click="router.push('/joinus')">加入我們</div>
+          <div class="text-16px text-neutral-06 font-400 transition duration-300 hover:text-header-hover" @click="router.push('/joinus')">加入我們</div>
           <div class="border-r border-neutral-06"></div>
-          <a href="mailto:zoe@newdigit.io" class="text-16px text-neutral-06 font-400">聯絡我們</a>
+          <div class="text-neutral-06 transition duration-300 hover:text-header-hover">
+            <a href="mailto:zoe@newdigit.io" class="text-16px font-400">聯絡我們</a>
+          </div>
         </div>
       </div>
       <!-- <div class="flex flex-col w-full mt-64px gap-18px xl:mt-0 xl:w-auto">

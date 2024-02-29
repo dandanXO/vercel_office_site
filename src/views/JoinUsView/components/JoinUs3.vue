@@ -69,9 +69,11 @@ const handleExpand = (index = 0) => {
                       {{mytext}}
                     </div>
                     <div class="mb-5 mt-15">
-                    <button class="m-5 ml-0 flex border rounded-full px-4 py-4 text-base" style="background-color: transparent;border:1px solid #141414">
-                      投遞履歷 <img :src="arrowRight" class="h-6 w-6" />
-                    </button>
+                    <a :href="item?.url || 'https://www.104.com.tw/company/1a2x6bmr13?jobsource=index_s'">
+                      <button class="m-5 ml-0 flex border rounded-full px-4 py-4 text-base" style="background-color: transparent;border:1px solid #141414">
+                        投遞履歷 <img :src="arrowRight" class="h-6 w-6" />
+                      </button>
+                    </a>
                     </div>
                   </div>
                 <!-- </Transition> -->
