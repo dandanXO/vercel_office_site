@@ -52,7 +52,7 @@ const Vector = imgUrl('home/section3/Vector.svg')
     
     <div class="relative mx-auto px-6 lg:px-10">
       <!-- Title and Description -->
-      <div class="mb-15 flex flex-col items-center justify-center text-center">
+      <div class="relative z-2 mb-15 flex flex-col items-center justify-center text-center">
         <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />
         <h1 class="mb-5 text-4xl font-bold">我們的價值觀</h1>
         <p class="mb-3 text-neutral-06">
