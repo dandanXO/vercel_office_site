@@ -147,7 +147,7 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
           href="https://www.104.com.tw/company/1a2x6bmr13?jobsource=index_s"
             class="rounded-20px bg-primary px-24px py-16px text-17px text-sm text-black font-500 decoration-none shadow-sm transition duration-300 hover:bg-neutral-07 hover:text-white focus-visible:outline-2 focus-visible:outline-primary/70 focus-visible:outline-offset-2 focus-visible:outline"
           >
-            聯絡我們 <IconArrowRight class="inline"></IconArrowRight>
+            加入我們 <IconArrowRight class="inline"></IconArrowRight>
           </a>
         </div>
       </div>

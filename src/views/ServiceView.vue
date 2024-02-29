@@ -142,7 +142,7 @@ const sq = imgUrl('service/bg-sq.png')
           期待與您洽談專案，協助您實現數位目標與取得成功
         </p>
       </div>
-      <div class="m-auto h-[56px] w-[140px] rounded-5 bg-black px-4 py-3.2 text-center">
+      <div class="m-auto h-[56px] w-[140px] rounded-5 bg-black px-4 py-3.2 text-center transition duration-300 hover:bg-gray-500">
         <a
           href="mailto:zoe@newdigit.io"
           class="mx-auto text-center text-base text-white font-500 decoration-none"
