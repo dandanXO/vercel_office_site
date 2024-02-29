@@ -6,90 +6,12 @@ import { reactive } from 'vue'
 
 import { onMounted, nextTick } from "vue";
 import AOS from 'aos';
-
+import jobData from './jd-data.json'
 onMounted(() => {
     AOS.init();
 })
 
-const contentList = reactive([
-  {
-    jobName: '開發工程師 (中級)',
-    title: 'Android Engineer',
-    type: '正職 1 名',
-    expand: false,
-    contentText: [
-        '協同團隊進行開發。',
-        '編寫清晰的程式邏輯，根據產品需求完成功能模組、編碼測試及優化工作。',
-        '專科及以上學歷，資訊工程或其他相關專業。',
-        '',
-        '【工作內容】',
-        ' 1. 負責以網站、數位設計建置之專案管理。',
-        ' 2. 專案時程、風險、預算之控管。',
-        ' 3. 專案需求釐清、擬定網站架構圖、Wireframe 繪製。',
-        ' 4. 跨部門溝通、協調客戶＆團隊之共同目標。',
-        '',
-        '【必備條件】',
-        ' . 口條清晰、具有說服力。',
-        ' . 具備網站從建立到上線的相關基礎知識理解。',
-        ' . 具備品牌識別建立規範的相關知識理解。',
-        '',
-        '【加分條件】',
-        ' . 曾經是設計師、工程師之工作經驗。',
-    ],
-  },
-  {
-    jobName: '開發工程師 (中級)',
-    title: 'Android Engineer',
-    type: '正職 1 名',
-    // descript: '',
-    expand: false,
-    contentText: [
-      '協同團隊進行開發。',
-      '編寫清晰的程式邏輯，根據產品需求完成功能模組、編碼測試及優化工作。',
-      '專科及以上學歷，資訊工程或其他相關專業。',
-      '',
-      '【工作內容】',
-      ' 1. 負責以網站、數位設計建置之專案管理。',
-      ' 2. 專案時程、風險、預算之控管。',
-      ' 3. 專案需求釐清、擬定網站架構圖、Wireframe 繪製。',
-      ' 4. 跨部門溝通、協調客戶＆團隊之共同目標。',
-      '',
-      '【必備條件】',
-      ' . 口條清晰、具有說服力。',
-      ' . 具備網站從建立到上線的相關基礎知識理解。',
-      ' . 具備品牌識別建立規範的相關知識理解。',
-      '',
-      '【加分條件】',
-      ' . 曾經是設計師、工程師之工作經驗。',
-    ],
-  },
-  {
-    jobName: '開發工程師 (中級)',
-    title: 'Android Engineer',
-    type: '正職 1 名',
-    // descript: '',
-    expand: false,
-    contentText: [
-      '協同團隊進行開發。',
-      '編寫清晰的程式邏輯，根據產品需求完成功能模組、編碼測試及優化工作。',
-      '專科及以上學歷，資訊工程或其他相關專業。',
-      '',
-      '【工作內容】',
-      ' 1. 負責以網站、數位設計建置之專案管理。',
-      ' 2. 專案時程、風險、預算之控管。',
-      ' 3. 專案需求釐清、擬定網站架構圖、Wireframe 繪製。',
-      ' 4. 跨部門溝通、協調客戶＆團隊之共同目標。',
-      '',
-      '【必備條件】',
-      ' . 口條清晰、具有說服力。',
-      ' . 具備網站從建立到上線的相關基礎知識理解。',
-      ' . 具備品牌識別建立規範的相關知識理解。',
-      '',
-      '【加分條件】',
-      ' . 曾經是設計師、工程師之工作經驗。',
-    ],
-  },
-])
+const contentList = reactive(jobData)
 const Vector = imgUrl('joinUs/joinus3/Vector.svg')
 const arrowRight = imgUrl('joinUs/joinus3/arrow-right.svg')
 
@@ -119,26 +41,29 @@ const handleExpand = (index = 0) => {
 
       <!-- Cards and Image Layout -->
       <div class="flex items-center justify-center">
-        <table class="border-collapse" style="width: 1040px">
+        <table class="border-collapse">
           <thead class="" style="background-color:#E4FF00;">
           <tr>
             <th class="px-2 py-2 text-left text-base">職位名稱</th>
-            <th class="px-2 py-2 text-left text-base">類別</th>
+            <th class="">
+              <div class="px-2 py-2 text-left text-base">類別</div>
+            </th>
             <th class="px-2 py-2 text-left text-base">職位描述</th>
           </tr>
           </thead>
           <tbody>
           <tr v-for="(item , index) in contentList" :key="item.title">
-            <td class="w-2/12 px-2 py-2 text-left">
-              <div class="text-base text-neutral-06 font-bold">{{item.jobName}}</div>
-              <div class="font-bold">{{item.title}}</div>
-
+            <td valign="top" class="px-2 py-6 text-left">
+                <div class="text-base text-neutral-06 font-bold">{{item.jobName}}</div>
+                <div class="font-bold">{{item.title}}</div>
             </td>
-            <td class="w-1/12 px-2 py-2 text-left text-sm font-normal">{{item.type}}</td>
+            <td width="200" valign="top" class="px-2 py-6 text-left text-sm font-normal">
+              <div class="hs-100px">{{item.type}}</div>
+            </td>
             <td class="w-12/12 flex px-6 py-6 text-left text-sm font-normal">
               
                 <!--展开的 code start-->
-                <Transition name="drawer" key="1">
+                <!-- <Transition name="drawer" key="1"> -->
                   <div v-if="item.expand" class="h-12 text-ellipsis" style="width:560px;height:auto;text-overflow:ellipsis;">
                     <div v-for="(mytext, mkey) in item.contentText" :key="mkey">
                       {{mytext}}
@@ -149,19 +74,19 @@ const handleExpand = (index = 0) => {
                     </button>
                     </div>
                   </div>
-                </Transition>
+                <!-- </Transition> -->
                 <!--展开的 code end-->
                 <!--合起来的 code start-->
-                <Transition name="drawer2" key="2">
+                <!-- <Transition name="drawer2" key="2"> -->
                   <div v-if="!item.expand" class="h-20" style="width:560px;display: -webkit-box;overflow: hidden;-webkit-box-orient: vertical;-webkit-line-clamp: 4;">
                     <div v-for="(mytext, mkey) in item.contentText" :key="mkey">
                       {{mytext}}
                     </div>
                   </div>
-                </Transition>
+                <!-- </Transition> -->
                 <!--合起来的 code end-->
               <div class="flex justify-center" style="width: calc(100% - 560px);">
-                <div class="mb-2 h-[60px] w-[60px] flex cursor-pointer items-center justify-center rounded-full p-6 text-white" style="background-color: #141414" @click="handleExpand(index as number)">
+                <div class="mb-2 h-[60px] w-[60px] flex cursor-pointer items-center justify-center rounded-full bg-neutral-07 p-6 text-white hover:bg-gray-500" @click="handleExpand(index as number)">
                   <img :src="Vector" class="h-[96px] w-[96px]" :class="item.expand?'translationCircle':'translationCircleBack'"/>
                 </div>
               </div>

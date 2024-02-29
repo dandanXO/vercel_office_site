@@ -82,12 +82,12 @@ onMounted(() => {
         </div>
         <div class="mt-24px heading-3">探索新數位，重新定義未來</div>
       </div>
-      <div class="w-full flex justify-center">
+      <div class="bounce w-full flex justify-center">
         <button
           type="submit"
           class="rotate-180 rounded-full bg-primary p-14px text-neutral-07 hover:bg-primary-hover"
         >
-          <IconChavronUp class="bounce h-32px w-32px"></IconChavronUp>
+          <IconChavronUp class="h-32px w-32px"></IconChavronUp>
         </button>
       </div>
     </div>

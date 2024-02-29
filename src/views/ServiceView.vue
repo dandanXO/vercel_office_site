@@ -38,7 +38,7 @@ const sq = imgUrl('service/bg-sq.png')
         <img :src="img1" class="ml-20 rounded-20px object-cover !h-400px !w-400px" />
       </div>
     </div>
-    <div class="relative mx-auto px-8 pb-15 pt-15 lg:px-30">
+    <div class="relative mx-auto mb-15 px-8 pb-15 pt-15 lg:px-30">
       <div class="relative z-1 mb-10 flex flex-col items-center justify-center text-center">
         <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />
         <h1 class="mb-5 text-4xl font-bold">服務項目</h1>
@@ -59,14 +59,14 @@ const sq = imgUrl('service/bg-sq.png')
             <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">區塊鏈代客開發</h3>
             <p class="text-center text-xs text-neutral-05 lg:text-left">Web3.0 打造由代幣經濟驅動的互聯網，新數字將協助你與你的企業打造 Web3 新藍海。</p>
           </div>
-          <div className="mt-6 flex justify-center lg:justify-start">
+          <!-- <div className="mt-6 flex justify-center lg:justify-start">
           <a
             href="#"
             class="rounded-20px bg-primary px-24px py-16px text-17px text-sm text-black font-500 decoration-none shadow-sm hover:bg-neutral-07 hover:text-white focus-visible:outline-2 focus-visible:outline-primary/70 focus-visible:outline-offset-2 focus-visible:outline"
           >
             瞭解更多 <IconArrowRight class="inline"></IconArrowRight>
           </a>
-      </div>
+      </div> -->
         </div>
 
         <!-- Card 2 -->
@@ -79,14 +79,14 @@ const sq = imgUrl('service/bg-sq.png')
             <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">遊戲代客程式開發/代理</h3>
             <p class="text-center text-xs text-neutral-05 lg:text-left">致力於打造自有 IP 以打通遊戲、影視娛樂、商品周邊產業的全方位經紀公司，提供獨特的核心玩法、精緻的美術風格和令人難以抗拒的遊戲機制。</p>
           </div>
-          <div className="mt-6 flex justify-center lg:justify-start">
+          <!-- <div className="mt-6 flex justify-center lg:justify-start">
             <a
               href="#"
               class="rounded-20px bg-primary px-24px py-16px text-17px text-sm text-black font-500 decoration-none shadow-sm hover:bg-neutral-07 hover:text-white focus-visible:outline-2 focus-visible:outline-primary/70 focus-visible:outline-offset-2 focus-visible:outline"
             >
               瞭解更多 <IconArrowRight class="inline"></IconArrowRight>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
       <!-- card 3 4 -->
@@ -102,14 +102,14 @@ const sq = imgUrl('service/bg-sq.png')
             <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">品牌流量增長</h3>
             <p class="text-center text-xs text-neutral-05 lg:text-left">提供多種高級專業功能，包括分析工具、社交媒體整合、定製內容創建和排程功能，助您打造更具吸引力的社群內容，增加互動和分享，從而實現社群的持續成長。</p>
           </div>
-          <div className="mt-6 flex justify-center lg:justify-start">
+          <!-- <div className="mt-6 flex justify-center lg:justify-start">
             <a
               href="#"
               class="rounded-20px bg-primary px-24px py-16px text-17px text-sm text-black font-500 decoration-none shadow-sm hover:bg-neutral-07 hover:text-white focus-visible:outline-2 focus-visible:outline-primary/70 focus-visible:outline-offset-2 focus-visible:outline"
             >
               瞭解更多 <IconArrowRight class="inline"></IconArrowRight>
             </a>
-          </div>
+          </div> -->
         </div>
 
         <!-- Card 4 -->
@@ -122,14 +122,14 @@ const sq = imgUrl('service/bg-sq.png')
             <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">ESG</h3>
             <p class="text-center text-xs text-neutral-05 lg:text-left">滿足當代人的需求又不危及後代人滿足其需求的發展，稱之為永續。我們將用科技的力量，具現化一種被人類遺忘的心能力。</p>
           </div>
-          <div className="mt-6 flex justify-center lg:justify-start">
+          <!-- <div className="mt-6 flex justify-center lg:justify-start">
             <a
               href="#"
               class="rounded-20px bg-primary px-24px py-16px text-17px text-sm text-black font-500 decoration-none shadow-sm hover:bg-neutral-07 hover:text-white focus-visible:outline-2 focus-visible:outline-primary/70 focus-visible:outline-offset-2 focus-visible:outline"
             >
               瞭解更多 <IconArrowRight class="inline"></IconArrowRight>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -142,7 +142,7 @@ const sq = imgUrl('service/bg-sq.png')
           期待與您洽談專案，協助您實現數位目標與取得成功
         </p>
       </div>
-      <div class="m-auto h-[56px] w-[140px] border-2 rounded-5 bg-black px-4 py-3.2 text-center">
+      <div class="m-auto h-[56px] w-[140px] rounded-5 bg-black px-4 py-3.2 text-center">
         <a
           href="mailto:zoe@newdigit.io"
           class="mx-auto text-center text-base text-white font-500 decoration-none"

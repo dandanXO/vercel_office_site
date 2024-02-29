@@ -43,7 +43,7 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
       <div class="mb-5 text-[32px] font-bold font-sans">
         數位體驗再定義
       </div>
-      <div class="mb-5 text-neutral-06 font-[24px]">
+      <div class="mb-5 text-[1.2rem] text-neutral-06">
         New Digit Defines Your Experience
       </div>
       <div class="text-neutral-06 font-[20x]">
@@ -128,7 +128,7 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
         </div>
         <div className="mt-6 flex justify-center lg:justify-start">
           <a
-            href="mailto:zoe@newdigit.io"
+            href="https://www.104.com.tw/company/1a2x6bmr13?jobsource=index_s"
             class="rounded-20px bg-primary px-24px py-16px text-17px text-sm text-black font-500 decoration-none shadow-sm hover:bg-neutral-07 hover:text-white focus-visible:outline-2 focus-visible:outline-primary/70 focus-visible:outline-offset-2 focus-visible:outline"
           >
             聯絡我們 <IconArrowRight class="inline"></IconArrowRight>
@@ -144,7 +144,7 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
         </div>
         <div className="mt-6 flex justify-center lg:justify-start">
           <a
-          href="mailto:zoe@newdigit.io"
+          href="https://www.104.com.tw/company/1a2x6bmr13?jobsource=index_s"
             class="rounded-20px bg-primary px-24px py-16px text-17px text-sm text-black font-500 decoration-none shadow-sm hover:bg-neutral-07 hover:text-white focus-visible:outline-2 focus-visible:outline-primary/70 focus-visible:outline-offset-2 focus-visible:outline"
           >
             聯絡我們 <IconArrowRight class="inline"></IconArrowRight>

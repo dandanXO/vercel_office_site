@@ -24,15 +24,15 @@ const appStore = useAppStore()
           v-for="item in mainNav"
           :key="item.name"
           :to="item.to"
-          class="px-5 py-3 text-base text-black font-500 decoration-none"
+          class="px-5 py-3 text-base text-black font-500 decoration-none hover:text-gray-500"
           >{{ item.name }}</router-link
         >
       </div>
       <div class="flex flex-row items-center hover:cursor-pointer">
-        <div class="inlin border-2 border-black rounded-5 px-4 py-3.2 hover:border-gray-500">
+        <div class="inlin border-2 border-black rounded-5 px-4 py-3.2 hover:border-gray-500 hover:text-gray-500">
         <a
           href="mailto:zoe@newdigit.io"
-          class="text-base text-black font-500 decoration-none hover:text-gray-500"
+          class="text-base font-500 decoration-none"
           >聯絡我們</a
         >
       </div>
@@ -66,11 +66,11 @@ const appStore = useAppStore()
       <img :src="logo" class="" />
       <div class="flex flex-col gap-32px xl:flex-row xl:gap-80px">
         <div class="flex flex-row gap-18px text-neutral-07 hover:cursor-pointer">
-          <div class="text-16px text-neutral-06 font-400" @click="router.push('/about')" >關於新數字</div>
+          <div class="text-16px text-neutral-06 font-400 hover:text-gray-500" @click="router.push('/about')" >關於新數字</div>
           <div class="border-r border-neutral-06"></div>
-          <div class="text-16px text-neutral-06 font-400" @click="router.push('/service')" >服務項目</div>
+          <div class="text-16px text-neutral-06 font-400 hover:text-gray-500" @click="router.push('/service')" >服務項目</div>
           <div class="border-r border-neutral-06"></div>
-          <div class="text-16px text-neutral-06 font-400" @click="router.push('/joinus')">加入我們</div>
+          <div class="text-16px text-neutral-06 font-400 hover:text-gray-500" @click="router.push('/joinus')">加入我們</div>
           <div class="border-r border-neutral-06"></div>
           <a href="mailto:zoe@newdigit.io" class="text-16px text-neutral-06 font-400">聯絡我們</a>
         </div>
@@ -100,7 +100,7 @@ const appStore = useAppStore()
       </div> -->
     </div>
     <div class="py-8px text-center text-14px text-neutral-05 font-500 font-raleway xl:text-16px">
-      Copyright © New Digital
+      Copyright © New Digit Ltd.
     </div>
   </footer>
 </template>
