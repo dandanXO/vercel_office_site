@@ -14,6 +14,15 @@ const router = useRouter()
 const route = useRoute()
 const breakpoints = useBreakpoints(breakpointsTailwind)
 const appStore = useAppStore()
+
+import { useI18n } from "vue-i18n";
+const { locale } = useI18n();
+
+const changeLang = (val:string) => {
+  locale.value = val;
+  localStorage.setItem("lang", val);
+}
+
 </script>
 
 <template>
@@ -56,6 +65,16 @@ const appStore = useAppStore()
       <default-layout-drawer />
     </template>
   </header>
+  <!-- 国际化页面 -->
+  <div>
+    <span>通过切换语言按钮，来改变当前内容的语言</span>
+    <el-button type="primary" @click="changeLang('en')">英文</el-button>
+    <el-button type="primary" @click="changeLang('zhCN')">中文繁体</el-button>
+    <div>
+      <span>{{ $t("test") }}</span>
+    </div>
+  </div>
+
   <main class="overflow-hidden">
     <router-view></router-view>
   </main>

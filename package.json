@@ -43,6 +43,7 @@
     "easy-typer-js": "^2.1.0",
     "pinia": "^2.1.7",
     "vue": "^3.4.15",
+    "vue-i18n": "9",
     "vue-router": "^4.2.5",
     "vue3-lottie": "^3.2.0",
     "vue3-marquee": "4.2.0-beta.1"
