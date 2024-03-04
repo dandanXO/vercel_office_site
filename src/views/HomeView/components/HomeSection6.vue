@@ -4,9 +4,9 @@
 <template>
   <div class="border-b-2px border-white border-solid bg-primary-bg py-20 lg:p-20">
     <div class="mb-2 text-center">
-      <h1 class="mb-5 text-32px text-neutral-07 lg:text-40px">有任何需求嗎？</h1>
+      <h1 class="mb-5 text-32px text-neutral-07 lg:text-40px">{{ $t('any_need')  }}</h1>
       <h3 class="text-md text-neutral-06 max-md:px-10% lg:text-20px">
-        如果你想了解任何詳細資訊，歡迎直接來信，我們會盡快回覆
+        {{ $t('any_need_caption')  }}
       </h3>
     </div>
     <div class="flex items-center justify-center max-md:bg-white">
@@ -15,7 +15,7 @@
               href="mailto:zoe@newdigit.io"
               class="rounded-20px bg-primary px-24px py-16px text-17px text-sm text-black font-500 decoration-none shadow-sm transition duration-300 hover:bg-neutral-07 hover:text-white focus-visible:outline-2 focus-visible:outline-primary/70 focus-visible:outline-offset-2 focus-visible:outline"
             >
-              瞭解更多 <IconArrowRight class="inline"></IconArrowRight>
+            {{ $t('know_more')  }} <IconArrowRight class="inline"></IconArrowRight>
             </a>
           </div>
     </div>

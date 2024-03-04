@@ -19,7 +19,7 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
     <div class="mb-20 mt-11 flex flex-col text-left">
         <h1 class="z-10 mb-5 text-6xl font-bold">About Us</h1>
         <p class="z-10 mb-12 text-3xl text-neutral-06">
-          關於新數字
+          {{ $t('about')  }}
         </p>
       </div>
     <div
@@ -31,9 +31,9 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
       <div class="ml-20 w-[55%] flex flex-col justify-around">
         <IconVector2 class="inline h-48px w-43px"></IconVector2>
         <div class="text-[28px] text-blue-05 font-extrabold">WHO WE ARE?</div>
-        <div class="text-[32px] font-bold font-sans">為全球客戶提供品牌增長、Web3 整合、遊戲開發等解決方案，定義全新數位體驗</div>
+        <div class="text-[32px] font-bold font-sans">{{$t('about_caption1')}}</div>
         <div class="text-neutral-06 font-[20px]">
-          新數字為一跨國集團：台灣總部負責集團的研發中心，專注於 Web3 代客開發/整合、交易所 SaaS 平台開發、遊戲代客開發/代理、品牌流量增長，並用 ESG 理念貫徹台灣政府主力推動的永續行動。
+          {{$t('about_caption2')}}
         </div>
       </div>
     </div>
@@ -41,21 +41,21 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
       <div class="absolute top-0 z-0 h-20 w-20 bg-left-bottom bg-repeat -left-30" :style="'background-image: url('+bk3+')'" style="background-size: 50%"></div>
       <div class="absolute bottom-0 z-0 h-20 w-20 bg-left-bottom bg-repeat -right-30" :style="'background-image: url('+bk3+')'" style="background-size: 50%"></div>
       <div class="mb-5 text-[32px] font-bold font-sans">
-        數位體驗再定義
+        {{$t('degital_redefine')}}
       </div>
       <div class="mb-5 text-[1.2rem] text-neutral-06">
         New Digit Defines Your Experience
       </div>
       <div class="text-neutral-06 font-[20x]">
-        不只是一個口號，而是一個承諾。我們深刻理解您的需求，並以前瞻的視角創造數位產品及解決方案。持續創新，釋放您的數位影響力，創造嶄新的機會。
+        {{$t('newdigit_defines')}}
       </div>
     </div>
 
     <div class="relative z-1 mb-10 mt-25 flex flex-col items-center justify-center text-center">
       <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />
-      <h1 class="mb-5 text-4xl font-bold">新數字三大核心價值 3C</h1>
+      <h1 class="mb-5 text-4xl font-bold">{{$t('core')}}</h1>
       <p class="mb-3 text-neutral-06">
-        專注 Web 3、遊戲產業、品牌增長、ESG 四大新興產業賽道
+        {{$t('core_caption')}}
       </p>
       <div class="relative z-2 mt-15 w-full">
         <div class="relative w-full flex flex-row items-center">
@@ -80,10 +80,10 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
                 Creation
               </div>
               <div class="mb-4 text-[32px] text-neutral-07 font-bold">
-                前沿創新
+                {{$t('innovation')}}
               </div>
               <div class="text-[20px] text-neutral-06">
-                跟隨趨勢，更創造趨勢！新數字致力於開拓新的數位可能性，讓您的未來更加精彩。
+                {{$t('innovation_caption')}}
               </div>
             </div>
           </div>
@@ -93,10 +93,10 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
                 Customization
               </div>
               <div class="mb-4 text-[32px] text-neutral-07 font-bold">
-                個性化數位體驗
+                {{$t('customization')}}
               </div>
               <div class="text-[20px] text-neutral-06">
-                無論您是企業領袖、創業家還是夢想家，我們都將為您打造一個完全獨一無二的數字解決方案體驗。
+                {{$t('customization_caption')}}
               </div>
             </div>
             <div class="border border-neutral-07 rounded-40px bg-primary-bg px-15 py-10 text-left">
@@ -104,10 +104,10 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
                 Collaboration
               </div>
               <div class="mb-4 text-[32px] text-neutral-07 font-bold">
-                共同成長
+                {{$t('collaboration')}}
               </div>
               <div class="text-[20px] text-neutral-06">
-                我們的成功建立在您的成功之上。我們不僅是您的合作夥伴，更是您的共同成長伙伴。讓我們一起探索新數位，重新定義未來。這將是一場令人興奮的數位旅程。
+                {{$t('collaboration_caption')}}
               </div>
             </div>
           </div>
@@ -124,14 +124,14 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
           Let's talk !
         </div>
         <div class="text-[20px] text-neutral-06">
-          如果你想了解任何詳細資訊，歡迎直接來信，我們會盡快回覆！
+          {{$t('talk_caption')}}
         </div>
         <div className="mt-6 flex justify-center lg:justify-start">
           <a
             href="https://www.104.com.tw/company/1a2x6bmr13?jobsource=index_s"
             class="rounded-20px bg-primary px-24px py-16px text-17px text-sm text-black font-500 decoration-none shadow-sm transition duration-300 hover:bg-neutral-07 hover:text-white focus-visible:outline-2 focus-visible:outline-primary/70 focus-visible:outline-offset-2 focus-visible:outline"
           >
-            聯絡我們 <IconArrowRight class="inline"></IconArrowRight>
+          {{$t('contact')}} <IconArrowRight class="inline"></IconArrowRight>
           </a>
         </div>
       </div>
@@ -140,14 +140,14 @@ const footer2 = imgUrl('joinUs/footer-right-bottom.png')
           Join Us !
         </div>
         <div class="text-[20px] text-neutral-06">
-          你的加入本質上就是一種創業！讓我們一起徜徉在 Web3 的 Blue Ocean
+          {{$t('join_caption')}}
         </div>
         <div className="mt-6 flex justify-center lg:justify-start">
           <a
           href="https://www.104.com.tw/company/1a2x6bmr13?jobsource=index_s"
             class="rounded-20px bg-primary px-24px py-16px text-17px text-sm text-black font-500 decoration-none shadow-sm transition duration-300 hover:bg-neutral-07 hover:text-white focus-visible:outline-2 focus-visible:outline-primary/70 focus-visible:outline-offset-2 focus-visible:outline"
           >
-            加入我們 <IconArrowRight class="inline"></IconArrowRight>
+          {{$t('join')}} <IconArrowRight class="inline"></IconArrowRight>
           </a>
         </div>
       </div>

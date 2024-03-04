@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { useI18n } from 'vue-i18n'
+
+const i18n = useI18n()
 
 type FAQItem = {
   question: string;
@@ -8,9 +11,9 @@ type FAQItem = {
 
 const items: FAQItem[] = [
   {
-    question: "1. 當前貴公司提供什麼樣的業務？",
+    question: i18n.t('question1'),
     answer:
-      '我們當前能向客戶提供以下服務：<p class="mt-3 mb-3">(1) 白標加密貨幣交易所:</p> <p class="ml-6">我們提供一站式的架站，客戶無需再自己養大量的開發人員，僅需專注在交易所的運營業務上。</p><p class="mt-3 mb-3">(2) Web3 應用:</p><p class="ml-6">我們能為客戶客製化其 Web3 應用，包含 DeFi 合約、NFT 合約、各類創新 dApps。</p><p class="mt-3 mb-3">(3) 遊戲代操：</p><p class="ml-6">我們有專門運營國際線上遊戲的專業團隊，提供遊戲代操服務。</p>',
+      i18n.t('answer1'),
   },
   {
     question: "2. 如果有白標加密貨幣交易所的需求，請問要如何聯繫？",

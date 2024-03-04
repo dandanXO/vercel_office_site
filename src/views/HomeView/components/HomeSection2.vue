@@ -1,21 +1,22 @@
 <script setup lang="ts">
 import IconVector from '@icons/nd/vector.svg'
 import { imgUrl } from '@/assets'
+import { useI18n } from 'vue-i18n'
 const props = defineProps<{
   sectionVisible: boolean
 }>()
 const img1 = imgUrl('home/2-1.png')
-
+const i18n = useI18n()
 const goals = ref([
   {
     num: 0,
     numTarget: 5,
     numStr: '',
-    sub: '國家',
+    sub: i18n.t('country'),
   },
 
-  { num: 0, numTarget: 100, numStr: '+', sub: '客戶' },
-  { num: 0, numTarget: 300, numStr: '+', sub: '員工' },
+  { num: 0, numTarget: 100, numStr: '+', sub: i18n.t('client') },
+  { num: 0, numTarget: 300, numStr: '+', sub: i18n.t('employee') },
 ])
 
 watch(
@@ -58,7 +59,7 @@ watch(
       >
         <div class="flex flex-col items-center justify-center xl:items-start">
           <IconVector class="mb-16px h-43px w-43px" />
-          <div class="header-2 xl:header-1">我們的里程碑</div>
+          <div class="header-2 xl:header-1">{{ $t('our_stone')  }}</div>
         </div>
         <div
           class="flex items-center gap-10px xl:justify-start"

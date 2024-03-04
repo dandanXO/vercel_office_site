@@ -68,10 +68,10 @@ onMounted(() => {
               class="ml-0 mr-8px border border-r-4px border-t-32px border-neutral-07 rounded-8px"
             ></span>
         </div>
-        <div class="heading-3">探索新數位，重新定義未來</div>
+        <div class="heading-3">{{ $t('home_title')  }}</div>
       </div>
       <div class="mb-64px w-full text-center" v-else>
-        <div class="text-40px font-900 leading-46px tracking-[4%] font-raleway">New Digit?</div>
+        <div class="text-40px font-900 leading-46px tracking-[4%] font-raleway">New Digit</div>
         <div class="my-4 text-40px font-900 leading-46px tracking-[4%] font-raleway">
           Defines <IconVector1 class="inline h-40px w-40px"></IconVector1> Your
         </div>
@@ -80,7 +80,7 @@ onMounted(() => {
           <span class="text-primary-hover">{{ titleType.output }}</span>
           <span class="ml-12px mr-8px border border-r-4px border-neutral-07 rounded-4px"></span>
         </div>
-        <div class="mt-24px heading-3">探索新數位，重新定義未來</div>
+        <div class="mt-24px heading-3">{{ $t('home_title')  }}</div>
       </div>
       <div class="bounce w-full flex justify-center">
         <button

@@ -2,8 +2,6 @@
 import { imgUrl } from '@/assets'
 import { reactive } from 'vue'
 
-
-
 import { onMounted, nextTick } from "vue";
 import AOS from 'aos';
 import jobData from './jd-data.json'
@@ -33,9 +31,9 @@ const handleExpand = (index = 0) => {
       <!-- Title and Description -->
       <div class="mb-5 flex flex-col items-center justify-center text-center">
         <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />
-        <h1 class="mb-5 text-4xl font-bold">加入我們</h1>
+        <h1 class="mb-5 text-4xl font-bold">{{ $t('join')  }}</h1>
         <p class="mb-3 text-xl text-neutral-06">
-          下方為我們目前正在招募的職缺，如果下方找不到你的職位，也歡迎來信自薦！
+          {{ $t('self_recommend')  }}
         </p>
       </div>
 
@@ -44,11 +42,11 @@ const handleExpand = (index = 0) => {
         <table class="border-collapse">
           <thead class="" style="background-color:#E4FF00;">
           <tr>
-            <th class="px-2 py-2 text-left text-base">職位名稱</th>
+            <th class="px-2 py-2 text-left text-base">{{ $t('position')  }}</th>
             <th class="">
-              <div class="px-2 py-2 text-left text-base">類別</div>
+              <div class="px-2 py-2 text-left text-base">{{ $t('category')  }}</div>
             </th>
-            <th class="px-2 py-2 text-left text-base">職位描述</th>
+            <th class="px-2 py-2 text-left text-base">{{ $t('description')  }}</th>
           </tr>
           </thead>
           <tbody>
@@ -71,7 +69,7 @@ const handleExpand = (index = 0) => {
                     <div class="mb-5 mt-15">
                     <a :href="item?.url || 'https://www.104.com.tw/company/1a2x6bmr13?jobsource=index_s'">
                       <button class="m-5 ml-0 flex border rounded-full px-4 py-4 text-base" style="background-color: transparent;border:1px solid #141414">
-                        投遞履歷 <img :src="arrowRight" class="h-6 w-6" />
+                        {{ $t('resume')  }} <img :src="arrowRight" class="h-6 w-6" />
                       </button>
                     </a>
                     </div>

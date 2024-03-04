@@ -14,9 +14,9 @@ const Vector = imgUrl('home/section3/Vector.svg')
     <div class="relative mx-auto px-8 py-5 lg:px-30">
       <div class="relative z-1 mb-10 flex flex-col items-center justify-center text-center">
         <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />
-        <h1 class="mb-5 text-4xl font-bold">我們的產品</h1>
+        <h1 class="mb-5 text-4xl font-bold">{{ $t('our_product')  }}</h1>
         <p class="mb-3 text-neutral-06">
-          專注遊戲、Web 3、ESG 三大新興產業賽道
+          {{ $t('product_caption')  }}
         </p>
       </div>
       <!-- Cards 1 2 -->
@@ -28,8 +28,8 @@ const Vector = imgUrl('home/section3/Vector.svg')
             <div class="mb-8 flex justify-center rounded-full text-white lg:justify-start">
               <img :src="iconList[0]" class="h-[140px] w-[140px]" />
             </div>
-            <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">區塊鏈代客開發</h3>
-            <p class="text-center text-xs text-neutral-05 lg:text-left">Web3.0 打造由代幣經濟驅動的互聯網，新數字將協助你與你的企業打造 Web3 新藍海。</p>
+            <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">{{ $t('block_chain')  }}</h3>
+            <p class="text-center text-xs text-neutral-05 lg:text-left">{{ $t('blockchain_caption')  }}</p>
           </div>
           <!-- <div className="mt-6 flex justify-center lg:justify-start">
             <a
@@ -48,8 +48,8 @@ const Vector = imgUrl('home/section3/Vector.svg')
             <div class="mb-8 flex justify-center rounded-full text-white lg:justify-start">
               <img :src="iconList[1]" class="h-[140px] w-[140px]" />
             </div>
-            <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">遊戲代客程式開發/代理</h3>
-            <p class="text-center text-xs text-neutral-05 lg:text-left">致力於打造自有 IP 以打通遊戲、影視娛樂、商品周邊產業的全方位經紀公司，提供獨特的核心玩法、精緻的美術風格和令人難以抗拒的遊戲機制。</p>
+            <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">{{ $t('game')  }}</h3>
+            <p class="text-center text-xs text-neutral-05 lg:text-left">{{ $t('game_caption')  }}</p>
           </div>
           <!-- <div className="mt-8 flex justify-center lg:justify-start">
             <a
@@ -71,8 +71,8 @@ const Vector = imgUrl('home/section3/Vector.svg')
             <div class="mb-8 flex justify-center rounded-full text-white lg:justify-start">
               <img :src="iconList[2]" class="h-[140px] w-[140px]" />
             </div>
-            <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">品牌流量增長</h3>
-            <p class="text-center text-xs text-neutral-05 lg:text-left">提供多種高級專業功能，包括分析工具、社交媒體整合、定製內容創建和排程功能，助您打造更具吸引力的社群內容，增加互動和分享，從而實現社群的持續成長。</p>
+            <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">{{ $t('brand')  }}</h3>
+            <p class="text-center text-xs text-neutral-05 lg:text-left">{{ $t('brand_caption')  }}</p>
           </div>
           <!-- <div className="mt-6 flex justify-center lg:justify-start">
             <a
@@ -92,7 +92,7 @@ const Vector = imgUrl('home/section3/Vector.svg')
               <img :src="iconList[3]" class="h-[140px] w-[140px]" />
             </div>
             <h3 class="mb-2 text-center text-lg font-semibold lg:text-left">ESG</h3>
-            <p class="text-center text-xs text-neutral-05 lg:text-left">滿足當代人的需求又不危及後代人滿足其需求的發展，稱之為永續。我們將用科技的力量，具現化一種被人類遺忘的心能力。</p>
+            <p class="text-center text-xs text-neutral-05 lg:text-left">{{ $t('esg_caption')  }}</p>
           </div>
           <!-- <div className="mt-6 flex justify-center lg:justify-start">
             <a

@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 import { imgUrl } from '@/assets'
+import { useI18n } from 'vue-i18n'
+
+const i18n = useI18n()
 const section3Ref = ref(null)
 // import { useWindowSize } from '@vueuse/core'
 // import { useElementSize } from '@vueuse/core'
@@ -10,34 +13,35 @@ const bk2 = imgUrl('home/section3/block-2.png')
 import { onMounted } from "vue";
 import AOS from 'aos';
 
+
 onMounted(() => {
     AOS.init();
 })
 
 const contentList = [
   {
-    title: '內部創業',
+    title: i18n.t('internal_entrepreneurship'),
     icon: imgUrl('home/section3/icon1.png'),
     contentText:
       'Internal entrepreneurship',
     class: 'lg:m-b-40'
   },
   {
-    title: '遊戲樂趣',
+    title: i18n.t('gaming_enjoyment'),
     icon: imgUrl('home/section3/icon2.png'),
     contentText:
       'Gaming enjoyment',
     class: 'lg:m-b-0'
   },
   {
-    title: '快速迭代',
+    title: i18n.t('rapid_iteration'),
     icon: imgUrl('home/section3/icon3.png'),
     contentText:
       'Rapid iteration',
     class: 'lg:m-b-40'
   },
   {
-    title: '激勵驅動',
+    title: i18n.t('incentive_driven'),
     icon: imgUrl('home/section3/icon4.png'),
     contentText:
       'Incentive-driven',
@@ -54,9 +58,9 @@ const Vector = imgUrl('home/section3/Vector.svg')
       <!-- Title and Description -->
       <div class="relative z-2 mb-15 flex flex-col items-center justify-center text-center">
         <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />
-        <h1 class="mb-5 text-4xl font-bold">我們的價值觀</h1>
+        <h1 class="mb-5 text-4xl font-bold">{{ $t('our_value')  }}</h1>
         <p class="mb-3 text-neutral-06">
-          新數字致力於為客戶定義全新的企業數字 DNA，為客戶在原有的賽道創造新藍海
+          {{ $t('our_value')  }}
         </p>
       </div>
 

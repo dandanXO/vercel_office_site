@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 import { imgUrl } from '@/assets'
+import { useI18n } from 'vue-i18n'
+
+const i18n = useI18n()
 const section3Ref = ref(null)
 
 import { useElementSize } from '@vueuse/core'
@@ -14,28 +17,28 @@ onMounted(() => {
 
 const contentList = [
   {
-    title: '內部創業',
+    title: i18n.t('internal_entrepreneurship'),
     icon: imgUrl('home/section3/icon1.png'),
     contentText:
       'Internal entrepreneurship',
     class: 'lg:m-b-40'
   },
   {
-    title: '遊戲樂趣',
+    title: i18n.t('gaming_enjoyment'),
     icon: imgUrl('home/section3/icon2.png'),
     contentText:
       'Gaming enjoyment',
     class: 'lg:m-b-0'
   },
   {
-    title: '快速迭代',
+    title: i18n.t('rapid_iteration'),
     icon: imgUrl('home/section3/icon3.png'),
     contentText:
       'Rapid iteration',
     class: 'lg:m-b-40'
   },
   {
-    title: '激勵驅動',
+    title: i18n.t('incentive_driven'),
     icon: imgUrl('home/section3/icon4.png'),
     contentText:
       'Incentive-driven',
@@ -53,10 +56,9 @@ const bk1 = imgUrl('joinUs/joinus2/block-1.png')
       <div class="absolute left-0 top-0 z-0 h-full w-full bg-left-bottom bg-no-repeat" :style="'background-image: url('+bk1+')'" style="background-size: 100%"></div>
       <div class="mb-3 flex flex-col items-center justify-center text-center">
         <img :src="Vector" class="mb-5 h-[42px] w-[42px]" />
-        <h1 class="z-2 mb-5 text-4xl font-bold">我們的文化 DNA</h1>
-        <p class="z-2 mb-3 text-xl text-neutral-06">
-          新數字鼓勵內部 Web3.0 創業，你有想法、我們支持 | Work hard,  play hard
-          透過快速迭代的專案流程，將想法實踐，創造價值。
+        <h1 class="z-2 mb-5 text-4xl font-bold">{{ $t('our_culture')  }}</h1>
+        <p class="z-2 mb-3 whitespace-pre text-xl text-neutral-06">
+          {{ $t('our_culture_caption')  }}
         </p>
       </div>
 

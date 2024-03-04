@@ -16,8 +16,11 @@ const breakpoints = useBreakpoints(breakpointsTailwind)
 const appStore = useAppStore()
 
 import { useI18n } from "vue-i18n";
-const { locale } = useI18n();
-
+const { locale,t } = useI18n();
+const mainNavs = mainNav.map(item=>{
+  item.name = t(item.name);
+  return item
+});
 const changeLang = (val:string) => {
   locale.value = val;
   localStorage.setItem("lang", val);
@@ -31,7 +34,7 @@ const changeLang = (val:string) => {
     <template v-if="breakpoints.lg.value">
       <div class="flex flex-1 justify-center">
         <router-link
-          v-for="item in mainNav"
+          v-for="item in mainNavs"
           :key="item.name"
           :to="item.to"
           class="px-5 py-3 text-base text-black font-500 decoration-none transition duration-300 hover:text-header-hover"
@@ -65,15 +68,15 @@ const changeLang = (val:string) => {
       <default-layout-drawer />
     </template>
   </header>
-  <!-- 国际化页面 -->
-  <div>
+  <!-- 国际化页面測試 -->
+  <!-- <div>
     <span>通过切换语言按钮，来改变当前内容的语言</span>
     <el-button type="primary" @click="changeLang('en')">英文</el-button>
     <el-button type="primary" @click="changeLang('zhCN')">中文繁体</el-button>
     <div>
       <span>{{ $t("test") }}</span>
     </div>
-  </div>
+  </div> -->
 
   <main class="overflow-hidden">
     <router-view></router-view>
@@ -87,14 +90,14 @@ const changeLang = (val:string) => {
       <img :src="logo" class="" />
       <div class="flex flex-col gap-32px xl:flex-row xl:gap-80px">
         <div class="flex flex-row gap-18px text-neutral-07 hover:cursor-pointer">
-          <div class="text-16px text-neutral-06 font-400 transition duration-300 hover:text-header-hover" @click="router.push('/about')" >關於新數字</div>
+          <div class="text-16px text-neutral-06 font-400 transition duration-300 hover:text-header-hover" @click="router.push('/about')" >{{ $t('about')  }}</div>
           <div class="border-r border-neutral-06"></div>
-          <div class="text-16px text-neutral-06 font-400 transition duration-300 hover:text-header-hover" @click="router.push('/service')" >服務項目</div>
+          <div class="text-16px text-neutral-06 font-400 transition duration-300 hover:text-header-hover" @click="router.push('/service')" >{{ $t('service')  }}</div>
           <div class="border-r border-neutral-06"></div>
-          <div class="text-16px text-neutral-06 font-400 transition duration-300 hover:text-header-hover" @click="router.push('/joinus')">加入我們</div>
+          <div class="text-16px text-neutral-06 font-400 transition duration-300 hover:text-header-hover" @click="router.push('/joinus')">{{ $t('join')  }}</div>
           <div class="border-r border-neutral-06"></div>
           <div class="text-neutral-06 transition duration-300 hover:text-header-hover">
-            <a href="mailto:zoe@newdigit.io" class="text-16px font-400">聯絡我們</a>
+            <a href="mailto:zoe@newdigit.io" class="text-16px font-400">{{ $t('contact')  }}</a>
           </div>
         </div>
       </div>
